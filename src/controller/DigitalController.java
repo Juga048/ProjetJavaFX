@@ -11,25 +11,29 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import modele.ModeleTexte;
 
 /**
  *
  * @author Axel
  */
-public class DigitalController implements Initializable{
+public class DigitalController implements MainController{
+    
     
     @FXML
-    Button quit;
+    Button quit;  
     
-   
+    
+    
+    
 
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
+    @FXML
+    private void initialize() {
         
     }
     
     @FXML
-    private void Quit(ActionEvent e){
+    private void quit(ActionEvent e){
         
         quit.getScene().getWindow().hide();
         

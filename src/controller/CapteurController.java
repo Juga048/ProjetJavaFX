@@ -14,8 +14,7 @@ import java.util.*;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
+
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
@@ -34,7 +33,7 @@ import modele.ModeleTexte;
  *
  * @author jugachon1
  */
-public class CapteurController implements Initializable{
+public class CapteurController implements MainController{
 
    
     
@@ -62,60 +61,47 @@ public class CapteurController implements Initializable{
        
        if ( id.equals("ajouter"))
        {
-           Parent root = FXMLLoader.load(getClass().getResource("/ihm/ValidatorFXML.fxml"));
-           Scene scene = new Scene(root);
-           
-           //Set the application title and icon
-           stage.setTitle("Ajouter un capteur");
-           stage.getIcons().add(new Image("/img/thermometer_icon.png"));
-           
-           stage.setScene(scene);
-           stage.showAndWait();
+          ValidatorController v = (ValidatorController) nouvelleFenetre("/ihm/ValidatorFXML.fxml", "Ajouter un capteur");
           
        }
        
        if ( id.equals("icone"))
        {
-           Parent root = FXMLLoader.load(getClass().getResource("/ihm/IconeFXML.fxml"));
-           Scene scene = new Scene(root);
-           
-           //Set the application title and icon
-           stage.setTitle("Affichage température icône");
-           stage.getIcons().add(new Image("/img/thermometer_icon.png"));
-           
-           stage.setScene(scene);
-           stage.showAndWait();
+           nouvelleFenetre("/ihm/IconeFXML.fxml", "Affichage température icône");
        }
        
        if ( id.equals("digital"))
        {
-           Parent root = FXMLLoader.load(getClass().getResource("/ihm/DigitalFXML.fxml"));
-           Scene scene = new Scene(root);
-           
-           //Set the application title and icon
-           stage.setTitle("Affichage température digitale");
-           stage.getIcons().add(new Image("/img/thermometer_icon.png"));
-           
-           stage.setScene(scene);
-           stage.showAndWait();
+           nouvelleFenetre("/ihm/DigitalFXML.fxml","Affichage température digitale");
+       
            
           
        }
        
        if ( id.equals("thermometre"))
        {
-           Parent root = FXMLLoader.load(getClass().getResource("/ihm/ThermometreFXML.fxml"));
-           Scene scene = new Scene(root);
+           nouvelleFenetre("/ihm/ThermometreFXML.fxml","Affichage température thermomètre");
            
-           //Set the application title and icon
-           stage.setTitle("Affichage température thermomètre");
-           stage.getIcons().add(new Image("/img/thermometer_icon.png"));
-           
-           stage.setScene(scene);
-           stage.showAndWait();
        }
        
           
+    }
+
+    private MainController nouvelleFenetre(String nomDuFichierFXML, String titre) throws IOException {
+        
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(nomDuFichierFXML));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        
+        //Set the application title and icon
+        stage.setTitle(titre);
+        stage.getIcons().add(new Image("/img/thermometer_icon.png"));
+        
+        stage.setScene(scene);
+        stage.showAndWait();
+        
+        return loader.getController();
+        
     }
     
     // Permet de supprimer l'élément sélectionné
@@ -138,11 +124,11 @@ public class CapteurController implements Initializable{
         public ObjectProperty<ModeleTexte> leModeleProperty(){return leModele;}
   
   
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
+    @FXML
+    public void initialize() {
         
         leModele.get().GenererCapteurs();
-        
+       
         
         listesDesCapteurs.setCellFactory(param -> 
             new ListCell<Capteur>(){
@@ -151,7 +137,7 @@ public class CapteurController implements Initializable{
                 protected void updateItem(Capteur item, boolean empty) {
                     super.updateItem(item, empty);
                     if (!empty) {
-                        textProperty().bind(item.NameProperty());
+                        textProperty().bind(item.NameProperty().concat(" (").concat(item.ValueProperty()).concat(")"));
                         
                         
                                       

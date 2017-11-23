@@ -23,7 +23,7 @@ import modele.Capteur;
  *
  * @author Axel
  */
-public class IconeController implements Initializable{
+public class IconeController implements MainController{
   
     @FXML
     ImageView ImageIcone;
@@ -43,8 +43,8 @@ public class IconeController implements Initializable{
         
     }
  
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
+    @FXML
+    public void initialize() {
         
         ImageIcone.setImage(new Image("img/Weather1.png"));
     }

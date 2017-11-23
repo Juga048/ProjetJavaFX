@@ -23,7 +23,7 @@ import modele.ModeleTexte;
  *
  * @author admin
  */
-public class ValidatorController implements Initializable{
+public class ValidatorController implements MainController{
     
     
     @FXML
@@ -46,14 +46,15 @@ public class ValidatorController implements Initializable{
     @FXML
     public void Valide(Event e) {
                 
-                System.out.println(" " + VilleSaisie.getText() + TempératureSaisie.getText());
+        System.out.println(" " + VilleSaisie.getText() + TempératureSaisie.getText());
+        
                
        
         
     }
 
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
+    @FXML
+    public void initialize() {
         
     }
     

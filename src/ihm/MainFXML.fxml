@@ -25,7 +25,7 @@
             <AnchorPane prefHeight="316.0" prefWidth="95.0" styleClass="background">
                 <children>
                     <Button fx:id="icone" layoutX="28.0" layoutY="47.0" onAction="#CreateWindow" text="Icone" />
-                    <Button fx:id="digital" layoutX="24.0" layoutY="132.0" onAction="#CreateWindow" text="Digitale" wrapText="true" />
+                    <Button fx:id="digital" layoutX="24.0" layoutY="132.0" onAction="#CreateWindow" text="Digitale" />
                     <Button fx:id="thermometre" layoutX="8.0" layoutY="219.0" onAction="#CreateWindow" text="Thermomètre" />
                     <Button fx:id="quit" layoutX="24.0" layoutY="361.0" onAction="#Quit" text="Quitter" />
                 </children>

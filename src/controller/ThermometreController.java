@@ -20,7 +20,7 @@ import modele.Capteur;
  *
  * @author Axel
  */
-public class ThermometreController implements Initializable{
+public class ThermometreController implements MainController{
     
     
     
@@ -35,8 +35,8 @@ public class ThermometreController implements Initializable{
     
    
 
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
+    @FXML
+    public void initialize() {
         ProgressBar.setProgress(0.5);
         ProgressBar.setRotate(270);
         ProgressIndi.setProgress(0.5);
