@@ -41,7 +41,7 @@ public class validatorController implements mainController{
     private TextField TempératureSaisie;
     
     @FXML
-    private void Cancel(ActionEvent e){
+    public void Cancel(ActionEvent e){
 
         Annuler.getScene().getWindow().hide();
     }
@@ -49,11 +49,11 @@ public class validatorController implements mainController{
     @FXML
     public Capteur Valide() {
         Alert alert = new Alert(AlertType.ERROR);
-        alert.setTitle("Error Dialog");
-        alert.setHeaderText("Look, an Error Dialog");
-        alert.setContentText("Ooops, there was an error!");
+        alert.setHeaderText("Erreur");
+
 
         if (VilleSaisie.getText().isEmpty() || TempératureSaisie.getText().isEmpty()){
+            alert.setContentText("Erreur, remplissez les champs !");
             alert.showAndWait();
             return null;
         }

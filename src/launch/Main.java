@@ -1,6 +1,6 @@
 package launch;
 
-import controller.CapteurController;
+import controller.capteurController;
 import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -14,14 +14,14 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        
+        setUserAgentStylesheet(STYLESHEET_CASPIAN);
         Parent root = FXMLLoader.load(getClass().getResource("/ihm/MainFXML.fxml"));
         Scene scene = new Scene(root);
         
         //Set the application title and icon
         primaryStage.setTitle("Capteur de Température");
         primaryStage.getIcons().add(new Image("/img/thermometer_icon.png"));
-        
+
         primaryStage.setScene(scene);
         primaryStage.show();
         

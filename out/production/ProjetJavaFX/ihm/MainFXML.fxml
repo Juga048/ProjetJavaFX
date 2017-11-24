@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <?import javafx.scene.control.ListView?>
-<AnchorPane prefHeight="402.0" prefWidth="361.0" styleClass="background" stylesheets="/css/style.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.capteurController">
+<AnchorPane prefHeight="402.0" prefWidth="361.0" styleClass="background" stylesheets="/css/controls" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.capteurController">
     <children>
     <SplitPane dividerPositions="0.6991643454038997" prefHeight="482.0" prefWidth="462.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>

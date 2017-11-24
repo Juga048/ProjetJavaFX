@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="273.0" prefWidth="271.0" stylesheets="/css/style.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.validatorController">
+<AnchorPane id="AnchorPane" prefHeight="273.0" prefWidth="271.0" stylesheets="/css/controls" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.validatorController">
    <children>
       <SplitPane dividerPositions="0.7556818181818182" layoutX="-49.0" layoutY="-27.0" orientation="VERTICAL" prefHeight="205.0" prefWidth="217.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>

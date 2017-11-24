@@ -37,9 +37,6 @@ public class capteurController implements mainController{
     
     @FXML
     Button quit;
-    
-    @FXML
-    Button ok;
 
     @FXML
     Stage stage = new Stage();
@@ -47,6 +44,7 @@ public class capteurController implements mainController{
     
     @FXML
     private void Quit (ActionEvent e){
+
         quit.getScene().getWindow().hide();
     }
    
@@ -58,24 +56,30 @@ public class capteurController implements mainController{
     private void CreateWindow(ActionEvent event) throws IOException{
 
         validatorController v = (validatorController) nouvelleFenetre("/ihm/ValidatorFXML.fxml", "Ajouter un capteur");
+        if (v.Valide.isPressed()){
+            leModele.get().AjouterCapteur(v.Valide());
+        }
 
-        leModele.get().AjouterCapteur(v.Valide());
 
     }
     @FXML
     private void Valider(ActionEvent e) throws IOException {
 
-        if (MenuAffichage.getValue().equals("Digital")) {
-            nouvelleFenetre("/ihm/DigitalFXML.fxml","Affichage température digitale");
-        }
-        if (MenuAffichage.getValue().equals("Icone")) {
-            nouvelleFenetre("/ihm/IconeFXML.fxml", "Affichage température icône");
-        }
-        if (MenuAffichage.getValue().equals("Thermomètre")) {
-            nouvelleFenetre("/ihm/ThermometreFXML.fxml","Affichage température thermomètre");
-        }
+        if ( MenuAffichage.getValue() != null ) {
+            if (MenuAffichage.getValue().equals("Digital")) {
 
+                digitalController d = (digitalController) nouvelleFenetre("/ihm/DigitalFXML.fxml", "Affichage température digitale");
+                //d.AffichageDigital.setText(listesDesCapteurs.getSelectionModel().getSelectedItem().getName());
 
+            }
+            if (MenuAffichage.getValue().equals("Icone")) {
+                iconeController i = (iconeController) nouvelleFenetre("/ihm/IconeFXML.fxml", "Affichage température icône");
+            }
+            if (MenuAffichage.getValue().equals("Thermomètre")) {
+                thermometreController t = (thermometreController) nouvelleFenetre("/ihm/ThermometreFXML.fxml", "Affichage température thermomètre");
+            }
+        }
+        else return;
 
     }
 
