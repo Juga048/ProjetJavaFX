@@ -9,7 +9,8 @@ import java.io.IOException;
 import java.net.URL;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
+import javafx.scene.control.*;
+
 import java.util.*;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
@@ -19,9 +20,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ListView;
-import javafx.scene.control.ListCell;
-import javafx.scene.control.SelectionMode;
 import javafx.scene.image.Image;
 import javafx.scene.layout.Background;
 import javafx.scene.text.Text;
@@ -33,14 +31,16 @@ import modele.ModeleTexte;
  *
  * @author jugachon1
  */
-public class CapteurController implements MainController{
+public class capteurController implements mainController{
 
    
     
     @FXML
     Button quit;
     
-   
+    @FXML
+    Button ok;
+
     @FXML
     Stage stage = new Stage();
     
@@ -50,44 +50,37 @@ public class CapteurController implements MainController{
         quit.getScene().getWindow().hide();
     }
    
-    
-    
+    @FXML
+    ComboBox MenuAffichage;
+
+
     @FXML 
     private void CreateWindow(ActionEvent event) throws IOException{
-       
-        // Permet de récupérer l'ID du bouton cliqué
-       Button btn = (Button) event.getSource();
-       String id = btn.getId();
-       
-       if ( id.equals("ajouter"))
-       {
-          ValidatorController v = (ValidatorController) nouvelleFenetre("/ihm/ValidatorFXML.fxml", "Ajouter un capteur");
-          
-       }
-       
-       if ( id.equals("icone"))
-       {
-           nouvelleFenetre("/ihm/IconeFXML.fxml", "Affichage température icône");
-       }
-       
-       if ( id.equals("digital"))
-       {
-           nouvelleFenetre("/ihm/DigitalFXML.fxml","Affichage température digitale");
-       
-           
-          
-       }
-       
-       if ( id.equals("thermometre"))
-       {
-           nouvelleFenetre("/ihm/ThermometreFXML.fxml","Affichage température thermomètre");
-           
-       }
-       
-          
+
+        validatorController v = (validatorController) nouvelleFenetre("/ihm/ValidatorFXML.fxml", "Ajouter un capteur");
+
+        leModele.get().AjouterCapteur(v.Valide());
+
+    }
+    @FXML
+    private void Valider(ActionEvent e) throws IOException {
+
+        if (MenuAffichage.getValue().equals("Digital")) {
+            nouvelleFenetre("/ihm/DigitalFXML.fxml","Affichage température digitale");
+        }
+        if (MenuAffichage.getValue().equals("Icone")) {
+            nouvelleFenetre("/ihm/IconeFXML.fxml", "Affichage température icône");
+        }
+        if (MenuAffichage.getValue().equals("Thermomètre")) {
+            nouvelleFenetre("/ihm/ThermometreFXML.fxml","Affichage température thermomètre");
+        }
+
+
+
     }
 
-    private MainController nouvelleFenetre(String nomDuFichierFXML, String titre) throws IOException {
+
+    private mainController nouvelleFenetre(String nomDuFichierFXML, String titre) throws IOException {
         
         FXMLLoader loader = new FXMLLoader(getClass().getResource(nomDuFichierFXML));
         Parent root = loader.load();

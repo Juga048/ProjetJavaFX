@@ -29,8 +29,8 @@ public class ModeleTexte {
         lesCapteurs.add(new Capteur("Strasbourg",10));
     }
     
-    public void AjouterCapteur(String nom,int valeur){
-        lesCapteurs.add(new Capteur(nom,valeur));
+    public void AjouterCapteur(Capteur C){
+        lesCapteurs.add(C);
     }
 
 }

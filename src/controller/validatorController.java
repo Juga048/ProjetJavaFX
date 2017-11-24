@@ -13,6 +13,8 @@ import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
@@ -23,7 +25,7 @@ import modele.ModeleTexte;
  *
  * @author admin
  */
-public class ValidatorController implements MainController{
+public class validatorController implements mainController{
     
     
     @FXML
@@ -40,17 +42,25 @@ public class ValidatorController implements MainController{
     
     @FXML
     private void Cancel(ActionEvent e){
+
         Annuler.getScene().getWindow().hide();
     }
           
     @FXML
-    public void Valide(Event e) {
-                
-        System.out.println(" " + VilleSaisie.getText() + TempératureSaisie.getText());
-        
-               
-       
-        
+    public Capteur Valide() {
+        Alert alert = new Alert(AlertType.ERROR);
+        alert.setTitle("Error Dialog");
+        alert.setHeaderText("Look, an Error Dialog");
+        alert.setContentText("Ooops, there was an error!");
+
+        if (VilleSaisie.getText().isEmpty() || TempératureSaisie.getText().isEmpty()){
+            alert.showAndWait();
+            return null;
+        }
+
+        Capteur C = new Capteur(VilleSaisie.getText(),Integer.parseInt(TempératureSaisie.getText()));
+        TempératureSaisie.getScene().getWindow().hide();
+        return C;    
     }
 
     @FXML

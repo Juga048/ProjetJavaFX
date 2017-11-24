@@ -20,7 +20,7 @@ import modele.Capteur;
  *
  * @author Axel
  */
-public class ThermometreController implements MainController{
+public class thermometreController implements mainController{
     
     
     

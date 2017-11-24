@@ -17,7 +17,7 @@ import modele.ModeleTexte;
  *
  * @author Axel
  */
-public class DigitalController implements MainController{
+public class digitalController implements mainController{
     
     
     @FXML

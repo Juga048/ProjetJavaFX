@@ -9,6 +9,6 @@ package controller;
  *
  * @author axbruget1
  */
-interface MainController {
-    
+interface mainController {
+   
 }

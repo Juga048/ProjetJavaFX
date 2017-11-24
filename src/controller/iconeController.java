@@ -23,7 +23,7 @@ import modele.Capteur;
  *
  * @author Axel
  */
-public class IconeController implements MainController{
+public class iconeController implements mainController{
   
     @FXML
     ImageView ImageIcone;
