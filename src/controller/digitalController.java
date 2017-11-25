@@ -35,6 +35,10 @@ public class digitalController implements mainController{
     private void initialize() {
 
     }
+
+    public void chargeTemperature(int value){
+        AffichageDigital.setText(String.valueOf(Integer.parseInt((String.valueOf(value))))+" °");
+    }
     
     @FXML
     private void quit(ActionEvent e){

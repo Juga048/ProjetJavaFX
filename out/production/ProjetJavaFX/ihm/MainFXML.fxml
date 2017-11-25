@@ -4,21 +4,21 @@
 <?import javafx.collections.FXCollections?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 
 <?import javafx.scene.control.ListView?>
 <AnchorPane prefHeight="402.0" prefWidth="361.0" styleClass="background" stylesheets="/css/controls" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.capteurController">
     <children>
-    <SplitPane dividerPositions="0.6991643454038997" prefHeight="482.0" prefWidth="462.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        <items>
-            <AnchorPane>
+      <HBox prefHeight="460.0" prefWidth="361.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="418.0" prefWidth="222.0">
                 <children>
-                    <ListView fx:id="listesDesCapteurs" items="${controller.leModele.lesCapteurs}" />
+                    <ListView fx:id="listesDesCapteurs" items="${controller.leModele.lesCapteurs}"/>
                 </children>
                 <children>
-                    <ToolBar layoutX="34.0" layoutY="360.0" prefHeight="40.0" prefWidth="248.0" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="360.0">
+                    <ToolBar layoutX="34.0" layoutY="368.0" prefHeight="51.0" prefWidth="253.0" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="368.0">
                         <items>
                             <Button fx:id="ajouter" onAction="#CreateWindow" text="Ajouter" />  
                             <Button fx:id="retirer" onAction="#Remove" text="Retirer" />
@@ -27,10 +27,10 @@
                 </children>
             </AnchorPane>
           
-            <AnchorPane prefHeight="316.0" prefWidth="95.0" styleClass="background">
+                              <AnchorPane prefHeight="419.0" prefWidth="148.0" styleClass="background">
                 <children>
-                    <Button fx:id="quit" layoutX="24.0" layoutY="361.0" onAction="#Quit" text="Quitter" />
-                    <ComboBox fx:id="MenuAffichage" layoutX="15.0" layoutY="33.0" prefHeight="31.0" prefWidth="105.0" promptText="Affichage" AnchorPane.bottomAnchor="369.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <Button fx:id="quit" layoutX="21.0" layoutY="384.0" onAction="#Quit" text="Quitter" />
+                    <ComboBox fx:id="MenuAffichage" layoutX="15.0" layoutY="33.0" prefHeight="32.0" prefWidth="99.0" promptText="Affichage" AnchorPane.bottomAnchor="397.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                         <items>
                             <FXCollections fx:factory="observableArrayList">
                                 <String fx:value="Digital" />
@@ -39,11 +39,11 @@
                             </FXCollections>
                         </items>
                     </ComboBox>
-                  <Button onAction="#Valider" fx:id="ok" layoutX="37.0" layoutY="229.0" mnemonicParsing="false" text="Ok" />
-
-                </children>
-            </AnchorPane>  
-        </items>
-      </SplitPane>
+                  <Button fx:id="ok" layoutX="37.0" layoutY="229.0" mnemonicParsing="false" onAction="#Valider" text="Ok" />
+      
+                            </children>
+            </AnchorPane>
+         </children>
+      </HBox>
    </children>
 </AnchorPane>

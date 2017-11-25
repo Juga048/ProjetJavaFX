@@ -5,19 +5,12 @@
  */
 package controller;
 
-import java.net.URL;
-import java.util.ResourceBundle;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import modele.Capteur;
 
 /**
  *
@@ -42,11 +35,27 @@ public class iconeController implements mainController{
         
         
     }
- 
+
+    public void chargeImage(int value){
+
+        if ( value >= 0 ){
+            ImageIcone.setImage(new Image("img/Weather4.png"));
+            if ( value >= 10 ){
+                ImageIcone.setImage(new Image("img/Weather2.png"));
+                if ( value >= 20 ){
+                    ImageIcone.setImage(new Image("img/Weather3.png"));
+                    if ( value >= 30 ){
+                        ImageIcone.setImage(new Image("img/Weather1.png"));
+                    }
+                }
+            }
+        }
+    }
+
     @FXML
     public void initialize() {
         
-        ImageIcone.setImage(new Image("img/Weather1.png"));
+
     }
 
     

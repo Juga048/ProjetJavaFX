@@ -11,6 +11,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.control.ProgressIndicator;
 import modele.Capteur;
@@ -32,16 +33,24 @@ public class thermometreController implements mainController{
     
     @FXML
     Button quit;
-    
+
+    @FXML
+    Label indicateurThermometre;
    
 
     @FXML
     public void initialize() {
-        ProgressBar.setProgress(0.5);
-        ProgressBar.setRotate(270);
-        ProgressIndi.setProgress(0.5);
+
     }
-    
+
+    public void chargeThermometre(int value){
+        // en supposant que température entre 0 et 50, 50 donne 1 -> barre au max
+        ProgressBar.setProgress((((double) value)/50));
+        indicateurThermometre.setText(String.valueOf(Integer.parseInt((String.valueOf(value))))+" °");
+
+
+    }
+
     @FXML
     private void Quit(ActionEvent e){
         

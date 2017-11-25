@@ -61,6 +61,7 @@ public class capteurController implements mainController{
         }
 
 
+
     }
     @FXML
     private void Valider(ActionEvent e) throws IOException {
@@ -88,7 +89,13 @@ public class capteurController implements mainController{
     private void edit(mainController m){
 
         if (m.getClass().getName() == "controller.digitalController") {
-            ((digitalController) m).AffichageDigital.setText(String.valueOf(Integer.parseInt(String.valueOf(listesDesCapteurs.getSelectionModel().getSelectedItem().getValue())))+" °");
+            ((digitalController) m).chargeTemperature(Integer.parseInt(String.valueOf(listesDesCapteurs.getSelectionModel().getSelectedItem().getValue())));
+        }
+        if (m.getClass().getName() == "controller.iconeController") {
+            ((iconeController) m).chargeImage(Integer.parseInt(String.valueOf(listesDesCapteurs.getSelectionModel().getSelectedItem().getValue())));
+        }
+        if (m.getClass().getName() == "controller.thermometreController") {
+            ((thermometreController) m).chargeThermometre(Integer.parseInt(String.valueOf(listesDesCapteurs.getSelectionModel().getSelectedItem().getValue())));
         }
     }
 
