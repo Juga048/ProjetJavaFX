@@ -2,28 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b13c3d16-2c82-4add-ae6b-6f768e44e293" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/style.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/capteurController$1.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/capteurController$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/capteurController.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/capteurController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/digitalController.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/digitalController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/validatorController.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/validatorController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/launch/Main.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/launch/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/ihm/DigitalFXML.fxml" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/ihm/DigitalFXML.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/ihm/IconeFXML.fxml" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/ihm/IconeFXML.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/ihm/MainFXML.fxml" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/ihm/MainFXML.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/ihm/ThermometreFXML.fxml" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/ihm/ThermometreFXML.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/ihm/ValidatorFXML.fxml" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/ihm/ValidatorFXML.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/capteurController.java" afterPath="$PROJECT_DIR$/src/controller/capteurController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/digitalController.java" afterPath="$PROJECT_DIR$/src/controller/digitalController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/validatorController.java" afterPath="$PROJECT_DIR$/src/controller/validatorController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ihm/DigitalFXML.fxml" afterPath="$PROJECT_DIR$/src/ihm/DigitalFXML.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ihm/IconeFXML.fxml" afterPath="$PROJECT_DIR$/src/ihm/IconeFXML.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ihm/MainFXML.fxml" afterPath="$PROJECT_DIR$/src/ihm/MainFXML.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ihm/ThermometreFXML.fxml" afterPath="$PROJECT_DIR$/src/ihm/ThermometreFXML.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ihm/ValidatorFXML.fxml" afterPath="$PROJECT_DIR$/src/ihm/ValidatorFXML.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/launch/Main.java" afterPath="$PROJECT_DIR$/src/launch/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +18,87 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/launch/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DigitalFXML.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ihm/DigitalFXML.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="digitalController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/digitalController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="iconeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/iconeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="25" column="41" lean-forward="false" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="validatorController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/validatorController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="67" column="8" lean-forward="true" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thermometreController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/thermometreController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="34" column="4" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="capteurController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/controller/capteurController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -63,15 +127,15 @@
         <option value="$PROJECT_DIR$/src/controller/ValidatorController.java" />
         <option value="$PROJECT_DIR$/src/controller/iconeController.java" />
         <option value="$PROJECT_DIR$/src/controller/validatorController.java" />
-        <option value="$PROJECT_DIR$/src/controller/digitalController.java" />
-        <option value="$PROJECT_DIR$/src/controller/capteurController.java" />
         <option value="$PROJECT_DIR$/src/css/style.css" />
-        <option value="$PROJECT_DIR$/src/ihm/DigitalFXML.fxml" />
         <option value="$PROJECT_DIR$/src/ihm/IconeFXML.fxml" />
         <option value="$PROJECT_DIR$/src/ihm/MainFXML.fxml" />
         <option value="$PROJECT_DIR$/src/ihm/ThermometreFXML.fxml" />
         <option value="$PROJECT_DIR$/src/ihm/ValidatorFXML.fxml" />
         <option value="$PROJECT_DIR$/src/launch/Main.java" />
+        <option value="$PROJECT_DIR$/src/controller/digitalController.java" />
+        <option value="$PROJECT_DIR$/src/ihm/DigitalFXML.fxml" />
+        <option value="$PROJECT_DIR$/src/controller/capteurController.java" />
       </list>
     </option>
   </component>
@@ -102,6 +166,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -125,6 +191,13 @@
               <item name="ProjetJavaFX" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProjetJavaFX" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="MainController.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="ProjetJavaFX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjetJavaFX" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ihm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -143,9 +216,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,11 +357,12 @@
       <workItem from="1511506684615" duration="5223000" />
       <workItem from="1511518058845" duration="3197000" />
       <workItem from="1511544883821" duration="4595000" />
+      <workItem from="1511593667524" duration="4329000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13979000" />
+    <option name="totallyTimeSpent" value="18308000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -424,8 +496,6 @@
           <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3661#4278#0" expanded="true" />
-            <element signature="e#4277#4278#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -476,8 +546,6 @@
           <caret line="61" column="8" lean-forward="false" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3661#4278#0" expanded="true" />
-            <element signature="e#4277#4278#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -571,8 +639,6 @@
           <caret line="69" column="8" lean-forward="true" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3661#4278#0" expanded="true" />
-            <element signature="e#4277#4278#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -635,21 +701,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/thermometreController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/iconeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="25" column="41" lean-forward="false" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://E:/Disque Dure/Java/jdk-9.0.1/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
@@ -658,32 +709,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/validatorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="61" column="8" lean-forward="false" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/digitalController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="77" column="4" lean-forward="false" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/style.css" />
     <entry file="file://$PROJECT_DIR$/src/ihm/ValidatorFXML.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -714,99 +740,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/capteurController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3661#4278#0" expanded="true" />
-            <element signature="e#4277#4278#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/controls/jfx-combo-box.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/controls/jfx-dialog-layout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/jfoenix-design.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5718">
-          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/jfoenix-fonts.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/controls/jfx-alert.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/controls/jfx-color-picker.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/controls/jfx-date-picker.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="32" column="24" lean-forward="false" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/launch/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/controls/jfx-combo-box.css" />
+    <entry file="file://$PROJECT_DIR$/src/css/controls/jfx-dialog-layout.css" />
+    <entry file="file://$PROJECT_DIR$/src/css/jfoenix-design.css" />
+    <entry file="file://$PROJECT_DIR$/src/css/jfoenix-fonts.css" />
+    <entry file="file://$PROJECT_DIR$/src/css/controls/jfx-alert.css" />
+    <entry file="file://$PROJECT_DIR$/src/css/controls/jfx-color-picker.css" />
+    <entry file="file://$PROJECT_DIR$/src/css/controls/jfx-date-picker.css" />
     <entry file="file://$PROJECT_DIR$/src/ihm/MainFXML.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="11" column="99" lean-forward="false" selection-start-line="11" selection-start-column="99" selection-end-line="11" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ihm/DigitalFXML.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="126" lean-forward="false" selection-start-line="9" selection-start-column="126" selection-end-line="9" selection-end-column="126" />
           <folding />
         </state>
       </provider>
@@ -823,6 +767,71 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/launch/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/thermometreController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="34" column="4" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/digitalController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ihm/DigitalFXML.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/iconeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="25" column="41" lean-forward="false" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/validatorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="67" column="8" lean-forward="true" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/capteurController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

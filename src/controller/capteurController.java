@@ -64,13 +64,13 @@ public class capteurController implements mainController{
     }
     @FXML
     private void Valider(ActionEvent e) throws IOException {
-
-        if ( MenuAffichage.getValue() != null ) {
+        // Vérifie 2 condtions : Un capteur ET un affichage doivent être sélectionné
+        if ( MenuAffichage.getValue() == null || listesDesCapteurs.getSelectionModel().getSelectedIndex() == -1) {
+            return;
+        }
+        else {
             if (MenuAffichage.getValue().equals("Digital")) {
-
                 digitalController d = (digitalController) nouvelleFenetre("/ihm/DigitalFXML.fxml", "Affichage température digitale");
-                //d.AffichageDigital.setText(listesDesCapteurs.getSelectionModel().getSelectedItem().getName());
-
             }
             if (MenuAffichage.getValue().equals("Icone")) {
                 iconeController i = (iconeController) nouvelleFenetre("/ihm/IconeFXML.fxml", "Affichage température icône");
@@ -79,9 +79,19 @@ public class capteurController implements mainController{
                 thermometreController t = (thermometreController) nouvelleFenetre("/ihm/ThermometreFXML.fxml", "Affichage température thermomètre");
             }
         }
-        else return;
+
+
 
     }
+
+    // méthode permettant d'éditer la vue avant le .show
+    private void edit(mainController m){
+
+        if (m.getClass().getName() == "controller.digitalController") {
+            ((digitalController) m).AffichageDigital.setText(String.valueOf(Integer.parseInt(String.valueOf(listesDesCapteurs.getSelectionModel().getSelectedItem().getValue())))+" °");
+        }
+    }
+
 
 
     private mainController nouvelleFenetre(String nomDuFichierFXML, String titre) throws IOException {
@@ -93,10 +103,11 @@ public class capteurController implements mainController{
         //Set the application title and icon
         stage.setTitle(titre);
         stage.getIcons().add(new Image("/img/thermometer_icon.png"));
-        
+
         stage.setScene(scene);
+        edit(loader.getController());
         stage.showAndWait();
-        
+
         return loader.getController();
         
     }
@@ -109,6 +120,7 @@ public class capteurController implements mainController{
         {
             listesDesCapteurs.getItems().remove(listesDesCapteurs.getSelectionModel().getSelectedItem());
         }
+        else return;
         
     }
    
@@ -123,10 +135,8 @@ public class capteurController implements mainController{
   
     @FXML
     public void initialize() {
-        
         leModele.get().GenererCapteurs();
-       
-        
+
         listesDesCapteurs.setCellFactory(param -> 
             new ListCell<Capteur>(){
                 
@@ -134,7 +144,7 @@ public class capteurController implements mainController{
                 protected void updateItem(Capteur item, boolean empty) {
                     super.updateItem(item, empty);
                     if (!empty) {
-                        textProperty().bind(item.NameProperty().concat(" (").concat(item.ValueProperty()).concat(")"));
+                        textProperty().bind(item.NameProperty().concat(" (").concat(item.ValueProperty()).concat("°)"));
                         
                         
                                       
