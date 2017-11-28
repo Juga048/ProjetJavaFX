@@ -33,12 +33,13 @@ public class Capteur {
     
     
             
-        public Capteur(String nom,int valeur) 
-        {
+        public Capteur(String nom,int valeur){
+
+
             name.set(nom);
             value.set(valeur);
-	}
-        
+        }
+
         
         public String toString(Capteur A){
             return A.name + "(" + A.value + ")";

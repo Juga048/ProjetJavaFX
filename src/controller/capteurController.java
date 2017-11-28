@@ -56,8 +56,10 @@ public class capteurController implements mainController{
     private void CreateWindow(ActionEvent event) throws IOException{
 
         validatorController v = (validatorController) nouvelleFenetre("/ihm/ValidatorFXML.fxml", "Ajouter un capteur");
-        if (v.Valide.isPressed()){
-            leModele.get().AjouterCapteur(v.Valide());
+
+        Capteur c = v.getCapteur();
+        if (c != null){
+            leModele.get().AjouterCapteur(c);
         }
 
 
@@ -69,6 +71,7 @@ public class capteurController implements mainController{
         if ( MenuAffichage.getValue() == null || listesDesCapteurs.getSelectionModel().getSelectedIndex() == -1) {
             return;
         }
+
         else {
             if (MenuAffichage.getValue().equals("Digital")) {
                 digitalController d = (digitalController) nouvelleFenetre("/ihm/DigitalFXML.fxml", "Affichage température digitale");
@@ -98,7 +101,6 @@ public class capteurController implements mainController{
             ((thermometreController) m).chargeThermometre(Integer.parseInt(String.valueOf(listesDesCapteurs.getSelectionModel().getSelectedItem().getValue())));
         }
     }
-
 
 
     private mainController nouvelleFenetre(String nomDuFichierFXML, String titre) throws IOException {

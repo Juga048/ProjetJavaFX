@@ -27,7 +27,7 @@ import modele.ModeleTexte;
  */
 public class validatorController implements mainController{
     
-    
+
     @FXML
     Button Annuler;
     
@@ -39,15 +39,24 @@ public class validatorController implements mainController{
     
     @FXML
     private TextField TempératureSaisie;
-    
+
+    private Capteur capteur;
+
+    public Capteur getCapteur() {
+        return capteur;
+    }
+
     @FXML
     public void Cancel(ActionEvent e){
+        fermerFenetre();
+    }
 
+    public void fermerFenetre(){
         Annuler.getScene().getWindow().hide();
     }
-          
+    // + Ajouter la vérification en cas d'insertion de caractères pour la température
     @FXML
-    public Capteur Valide() {
+    public void Valider(ActionEvent e) {
         Alert alert = new Alert(AlertType.ERROR);
         alert.setHeaderText("Erreur");
 
@@ -55,12 +64,12 @@ public class validatorController implements mainController{
         if (VilleSaisie.getText().isEmpty() || TempératureSaisie.getText().isEmpty()){
             alert.setContentText("Erreur, remplissez les champs !");
             alert.showAndWait();
-            return null;
-        }
 
-        Capteur C = new Capteur(VilleSaisie.getText(),Integer.parseInt(TempératureSaisie.getText()));
-        TempératureSaisie.getScene().getWindow().hide();
-        return C;    
+        }
+        else {
+            capteur = new Capteur(VilleSaisie.getText(), Integer.parseInt(TempératureSaisie.getText()));
+            fermerFenetre();
+        }
     }
 
     @FXML

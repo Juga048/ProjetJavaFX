@@ -33,7 +33,7 @@
                <children>
                   <ToolBar prefHeight="88.0" prefWidth="253.0" styleClass="background" AnchorPane.bottomAnchor="-25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <items>
-                      <Button fx:id="Valider" mnemonicParsing="false" onAction="#Valide" text="Valider" />
+                      <Button fx:id="Valider" mnemonicParsing="false" onAction="#Valider" text="Valider" />
                       <Button fx:id="Annuler" layoutX="10.0" layoutY="58.0" mnemonicParsing="false" onAction="#Cancel" text="Annuler" />
                     </items>
                   </ToolBar>
