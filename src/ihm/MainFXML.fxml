@@ -41,7 +41,7 @@
                     </ComboBox>
                   <Button fx:id="ok" layoutX="37.0" layoutY="229.0" mnemonicParsing="false" onAction="#creerFenetreObservation" text="Ok" />
       
-                            </children>
+                </children>
             </AnchorPane>
          </children>
       </HBox>

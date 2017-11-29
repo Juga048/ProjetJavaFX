@@ -29,8 +29,11 @@ import modele.ModeleTexte;
  */
 public class CapteurController implements mainController{
 
-   
-    
+
+
+    @Override
+    public void setValeur(int valeur){}
+
     @FXML
     Button quit;
 
@@ -46,6 +49,7 @@ public class CapteurController implements mainController{
    
     @FXML
     ComboBox MenuAffichage;
+
 
 
     @FXML 
@@ -87,19 +91,9 @@ public class CapteurController implements mainController{
     // méthode permettant d'éditer la vue avant le .show
     private void editerNouvelleFenetre(mainController m){
 
-        if (m.getClass().getName() == "controller.DigitalController") {
-            ((DigitalController) m).setValeur(Integer.parseInt(String.valueOf(listesDesCapteurs.getSelectionModel().getSelectedItem().getValue())));
-            ((DigitalController) m).initialize();
-            
-        }
-        if (m.getClass().getName() == "controller.IconeController") {
-            ((IconeController) m).setValeur(Integer.parseInt(String.valueOf(listesDesCapteurs.getSelectionModel().getSelectedItem().getValue())));
-            ((IconeController) m).initialize();
-        }
-        if (m.getClass().getName() == "controller.ThermometreController") {
-            ((ThermometreController) m).setValeur(Integer.parseInt(String.valueOf(listesDesCapteurs.getSelectionModel().getSelectedItem().getValue())));
-            ((ThermometreController) m).initialize();
-        }
+        m.setValeur(Integer.parseInt(String.valueOf(listesDesCapteurs.getSelectionModel().getSelectedItem().getValue())));
+        m.initialize();
+
     }
 
 
@@ -140,8 +134,8 @@ public class CapteurController implements mainController{
     public ObjectProperty<ModeleTexte> leModele = new SimpleObjectProperty<>(new ModeleTexte());
         public ModeleTexte getLeModele(){return leModele.get();}
         public ObjectProperty<ModeleTexte> leModeleProperty(){return leModele;}
-  
-  
+
+
     @FXML
     public void initialize() {
         leModele.get().genererCapteurs();

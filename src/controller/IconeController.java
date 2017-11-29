@@ -17,9 +17,9 @@ import javafx.scene.image.ImageView;
  * @author Axel
  */
 public class IconeController implements mainController{
-    
+
     public int val;
-    
+    @Override
     public void setValeur(int valeur){this.val = valeur;}
     
   
@@ -44,19 +44,18 @@ public class IconeController implements mainController{
     
     @FXML
     public void initialize() {
-        if ( val >= 0 ){
+        if ( val <= -20 ) {
             ImageIcone.setImage(new Image("img/Weather4.png"));
-            if ( val >= 10 ){
-                ImageIcone.setImage(new Image("img/Weather2.png"));
-                if ( val >= 20 ){
-                    ImageIcone.setImage(new Image("img/Weather3.png"));
-                    if ( val >= 30 ){
-                        ImageIcone.setImage(new Image("img/Weather1.png"));
-                    }
-                }
-            }
         }
-
+        else if (val > -20 && val <= 0) {
+            ImageIcone.setImage(new Image("img/Weather2.png"));
+        }
+        else if (val > 0 && val < 20){
+            ImageIcone.setImage(new Image("img/Weather3.png"));
+        }
+        else if (val >= 20) {
+            ImageIcone.setImage(new Image("img/Weather1.png"));
+        }
     }
 
     

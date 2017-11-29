@@ -21,9 +21,9 @@ import modele.ModeleTexte;
  * @author Axel
  */
 public class DigitalController implements mainController{
-    
+
     public int val;
-    
+    @Override
     public void setValeur(int valeur){this.val = valeur;}
     
     

@@ -10,5 +10,7 @@ package controller;
  * @author axbruget1
  */
 interface mainController {
-   
+    void setValeur(int valeur);
+
+    void initialize();
 }

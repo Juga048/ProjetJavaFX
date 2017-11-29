@@ -26,7 +26,10 @@ import modele.ModeleTexte;
  * @author admin
  */
 public class ValidatorController implements mainController{
-    
+
+
+    @Override
+    public void setValeur(int valeur){}
 
     @FXML
     Button Annuler;
@@ -72,6 +75,8 @@ public class ValidatorController implements mainController{
             fermerFenetre();
         }
     }
+
+
 
     @FXML
     public void initialize() {

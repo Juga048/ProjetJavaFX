@@ -23,7 +23,7 @@ import javafx.application.Platform;
  *
  * @author jugachon1
  */
-public class Capteur implements Runnable{
+public class Capteur extends GenerateurTemperature implements Runnable{
     
     private final SimpleIntegerProperty value = new SimpleIntegerProperty();
     private final StringProperty name = new SimpleStringProperty();
@@ -38,10 +38,10 @@ public class Capteur implements Runnable{
     public StringProperty NameProperty(){return name;}
     
     
-        // La température est générée aléatoirement entre 0 et 50
+
         public Capteur(String nom, long temps){
             name.set(nom);
-            value.set((int) round(0 + (Math.random() * (50 - 0))));
+            generationAleatoire(this);
             this.temps = temps;
             new Thread(this).start();      
         }
@@ -64,9 +64,8 @@ public class Capteur implements Runnable{
             {
                 Logger.getLogger(Capteur.class.getName()).log(Level.SEVERE, null, ex);
             }
-            Platform.runLater(()-> setValue((int) round(0 + (Math.random() * (50 - 0)))));
+            Platform.runLater(()-> generationAleatoire(this));
             }
-            //new Thread(this).start();
-           
+
         }           
 }

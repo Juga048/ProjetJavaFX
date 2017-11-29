@@ -24,7 +24,7 @@ import modele.Capteur;
 public class ThermometreController implements mainController{
     
     public int val;
-    
+    @Override
     public void setValeur(int valeur){this.val = valeur;}
     
     
