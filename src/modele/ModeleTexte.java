@@ -20,16 +20,16 @@ public class ModeleTexte {
         public ObservableList<Capteur> getLesCapteurs() {return lesCapteurs.get();}
         public ListProperty<Capteur> lesCapteursProperty() {return lesCapteurs;}
 
-    public void GenererCapteurs() {
-        lesCapteurs.add(new Capteur("Clermont-Ferrand"));
-        lesCapteurs.add(new Capteur("Paris"));
-        lesCapteurs.add(new Capteur("Marseille"));
-        lesCapteurs.add(new Capteur("Toulouse"));
-        lesCapteurs.add(new Capteur("Nice"));
-        lesCapteurs.add(new Capteur("Strasbourg"));
+    public void genererCapteurs() {
+        lesCapteurs.add(new Capteur("Clermont-Ferrand",2000));
+        lesCapteurs.add(new Capteur("Paris",2000));
+        lesCapteurs.add(new Capteur("Marseille",2000));
+        lesCapteurs.add(new Capteur("Toulouse",2000));
+        lesCapteurs.add(new Capteur("Nice",2000));
+        lesCapteurs.add(new Capteur("Strasbourg",2000));
     }
     
-    public void AjouterCapteur(Capteur C){
+    public void ajouterCapteur(Capteur C){
         lesCapteurs.add(C);
     }
 

@@ -21,12 +21,12 @@ public class Main extends Application {
         primaryStage.getIcons().add(new Image("/img/thermometer_icon.png"));
 
         primaryStage.setScene(scene);
-        primaryStage.show();
-        
-        
+        primaryStage.show();       
     }
     
     public static void main(String args[]) {
         Application.launch(args);
     }
 }
+
+// Ajouter ThreadManager pour gérer les thread et les stopper à la fermeture

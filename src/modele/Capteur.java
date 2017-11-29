@@ -14,16 +14,20 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
 import static java.lang.StrictMath.round;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javafx.application.Platform;
 
 
 /**
  *
  * @author jugachon1
  */
-public class Capteur {
+public class Capteur implements Runnable{
     
     private final SimpleIntegerProperty value = new SimpleIntegerProperty();
     private final StringProperty name = new SimpleStringProperty();
+    private long temps;
     
     public void setValue(int valeur){value.set(valeur);}
     public int getValue(){return value.get();}
@@ -35,13 +39,11 @@ public class Capteur {
     
     
         // La température est générée aléatoirement entre 0 et 50
-        public Capteur(String nom){
-
-
+        public Capteur(String nom, long temps){
             name.set(nom);
             value.set((int) round(0 + (Math.random() * (50 - 0))));
-
-
+            this.temps = temps;
+            new Thread(this).start();      
         }
 
 
@@ -49,8 +51,22 @@ public class Capteur {
             return A.name + "(" + A.value + ")";
         }
             
+        
+        public void run(){
+            while(true){
+                
+            
+            try 
+            {
+                Thread.sleep(temps);
+            } 
+            catch (InterruptedException ex) 
+            {
+                Logger.getLogger(Capteur.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            Platform.runLater(()-> setValue((int) round(0 + (Math.random() * (50 - 0)))));
+            }
+            //new Thread(this).start();
            
-          
-
-   
+        }           
 }

@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.HBox?>
 
 <?import javafx.scene.control.ListView?>
-<AnchorPane prefHeight="402.0" prefWidth="361.0" styleClass="background" stylesheets="/css/controls" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CapteurController">
+<AnchorPane prefHeight="402.0" prefWidth="361.0" styleClass="background" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CapteurController">
     <children>
       <HBox prefHeight="460.0" prefWidth="361.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>

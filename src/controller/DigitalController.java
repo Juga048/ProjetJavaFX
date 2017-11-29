@@ -22,6 +22,10 @@ import modele.ModeleTexte;
  */
 public class DigitalController implements mainController{
     
+    public int val;
+    
+    public void setValeur(int valeur){this.val = valeur;}
+    
     
     @FXML
     Button quit;  
@@ -32,13 +36,11 @@ public class DigitalController implements mainController{
     
 
     @FXML
-    private void initialize() {
-
+    public void initialize() {
+        AffichageDigital.setText(String.valueOf(Integer.parseInt((String.valueOf(val))))+" °");
     }
 
-    public void chargerTemperature(int value){
-        AffichageDigital.setText(String.valueOf(Integer.parseInt((String.valueOf(value))))+" °");
-    }
+  
     
     @FXML
     private void quit(ActionEvent e){

@@ -68,7 +68,7 @@ public class ValidatorController implements mainController{
 
         }
         else {
-            capteur = new Capteur(VilleSaisie.getText());
+            //capteur = new Capteur(VilleSaisie.getText());
             fermerFenetre();
         }
     }

@@ -55,7 +55,7 @@ public class CapteurController implements mainController{
 
         Capteur c = v.getCapteur();
         if (c != null){
-            leModele.get().AjouterCapteur(c);
+            leModele.get().ajouterCapteur(c);
         }
 
 
@@ -88,13 +88,17 @@ public class CapteurController implements mainController{
     private void editerNouvelleFenetre(mainController m){
 
         if (m.getClass().getName() == "controller.DigitalController") {
-            ((DigitalController) m).chargerTemperature(Integer.parseInt(String.valueOf(listesDesCapteurs.getSelectionModel().getSelectedItem().getValue())));
+            ((DigitalController) m).setValeur(Integer.parseInt(String.valueOf(listesDesCapteurs.getSelectionModel().getSelectedItem().getValue())));
+            ((DigitalController) m).initialize();
+            
         }
         if (m.getClass().getName() == "controller.IconeController") {
-            ((IconeController) m).chargerImage(Integer.parseInt(String.valueOf(listesDesCapteurs.getSelectionModel().getSelectedItem().getValue())));
+            ((IconeController) m).setValeur(Integer.parseInt(String.valueOf(listesDesCapteurs.getSelectionModel().getSelectedItem().getValue())));
+            ((IconeController) m).initialize();
         }
         if (m.getClass().getName() == "controller.ThermometreController") {
-            ((ThermometreController) m).chargerThermometre(Integer.parseInt(String.valueOf(listesDesCapteurs.getSelectionModel().getSelectedItem().getValue())));
+            ((ThermometreController) m).setValeur(Integer.parseInt(String.valueOf(listesDesCapteurs.getSelectionModel().getSelectedItem().getValue())));
+            ((ThermometreController) m).initialize();
         }
     }
 
@@ -140,7 +144,7 @@ public class CapteurController implements mainController{
   
     @FXML
     public void initialize() {
-        leModele.get().GenererCapteurs();
+        leModele.get().genererCapteurs();
 
         listesDesCapteurs.setCellFactory(param -> 
             new ListCell<Capteur>(){

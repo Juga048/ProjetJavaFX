@@ -23,6 +23,9 @@ import modele.Capteur;
  */
 public class ThermometreController implements mainController{
     
+    public int val;
+    
+    public void setValeur(int valeur){this.val = valeur;}
     
     
     @FXML
@@ -40,16 +43,11 @@ public class ThermometreController implements mainController{
 
     @FXML
     public void initialize() {
-
-    }
-
-    public void chargerThermometre(int value){
         // en supposant que température entre 0 et 50, 50 donne 1 -> barre au max
-        ProgressBar.setProgress((((double) value)/50));
-        indicateurThermometre.setText(String.valueOf(Integer.parseInt((String.valueOf(value))))+" °");
-
-
+        ProgressBar.setProgress((((double) val)/50));
+        indicateurThermometre.setText(String.valueOf(Integer.parseInt((String.valueOf(val))))+" °");    
     }
+
 
     @FXML
     private void Quit(ActionEvent e){
