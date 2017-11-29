@@ -20,7 +20,7 @@ import modele.ModeleTexte;
  *
  * @author Axel
  */
-public class digitalController implements mainController{
+public class DigitalController implements mainController{
     
     
     @FXML
@@ -36,7 +36,7 @@ public class digitalController implements mainController{
 
     }
 
-    public void chargeTemperature(int value){
+    public void chargerTemperature(int value){
         AffichageDigital.setText(String.valueOf(Integer.parseInt((String.valueOf(value))))+" °");
     }
     

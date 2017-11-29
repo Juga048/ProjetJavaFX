@@ -13,6 +13,8 @@ import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
+import static java.lang.StrictMath.round;
+
 
 /**
  *
@@ -32,15 +34,17 @@ public class Capteur {
     public StringProperty NameProperty(){return name;}
     
     
-            
-        public Capteur(String nom,int valeur){
+        // La température est générée aléatoirement entre 0 et 50
+        public Capteur(String nom){
 
 
             name.set(nom);
-            value.set(valeur);
+            value.set((int) round(0 + (Math.random() * (50 - 0))));
+
+
         }
 
-        
+
         public String toString(Capteur A){
             return A.name + "(" + A.value + ")";
         }

@@ -6,23 +6,19 @@
 package controller;
 
 import java.io.IOException;
-import java.net.URL;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
-import java.util.*;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 
 
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
-import javafx.scene.layout.Background;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import modele.Capteur;
 import modele.ModeleTexte;
@@ -31,7 +27,7 @@ import modele.ModeleTexte;
  *
  * @author jugachon1
  */
-public class capteurController implements mainController{
+public class CapteurController implements mainController{
 
    
     
@@ -43,7 +39,7 @@ public class capteurController implements mainController{
     
     
     @FXML
-    private void Quit (ActionEvent e){
+    private void quit (ActionEvent e){
 
         quit.getScene().getWindow().hide();
     }
@@ -53,9 +49,9 @@ public class capteurController implements mainController{
 
 
     @FXML 
-    private void CreateWindow(ActionEvent event) throws IOException{
+    private void creerFenetreValidation(ActionEvent event) throws IOException{
 
-        validatorController v = (validatorController) nouvelleFenetre("/ihm/ValidatorFXML.fxml", "Ajouter un capteur");
+        ValidatorController v = (ValidatorController) nouvelleFenetre("/ihm/ValidatorFXML.fxml", "Ajouter un capteur");
 
         Capteur c = v.getCapteur();
         if (c != null){
@@ -66,7 +62,7 @@ public class capteurController implements mainController{
 
     }
     @FXML
-    private void Valider(ActionEvent e) throws IOException {
+    private void creerFenetreObservation(ActionEvent e) throws IOException {
         // Vérifie 2 condtions : Un capteur ET un affichage doivent être sélectionné
         if ( MenuAffichage.getValue() == null || listesDesCapteurs.getSelectionModel().getSelectedIndex() == -1) {
             return;
@@ -74,13 +70,13 @@ public class capteurController implements mainController{
 
         else {
             if (MenuAffichage.getValue().equals("Digital")) {
-                digitalController d = (digitalController) nouvelleFenetre("/ihm/DigitalFXML.fxml", "Affichage température digitale");
+                DigitalController d = (DigitalController) nouvelleFenetre("/ihm/DigitalFXML.fxml", "Affichage température digitale");
             }
             if (MenuAffichage.getValue().equals("Icone")) {
-                iconeController i = (iconeController) nouvelleFenetre("/ihm/IconeFXML.fxml", "Affichage température icône");
+                IconeController i = (IconeController) nouvelleFenetre("/ihm/IconeFXML.fxml", "Affichage température icône");
             }
             if (MenuAffichage.getValue().equals("Thermomètre")) {
-                thermometreController t = (thermometreController) nouvelleFenetre("/ihm/ThermometreFXML.fxml", "Affichage température thermomètre");
+                ThermometreController t = (ThermometreController) nouvelleFenetre("/ihm/ThermometreFXML.fxml", "Affichage température thermomètre");
             }
         }
 
@@ -89,16 +85,16 @@ public class capteurController implements mainController{
     }
 
     // méthode permettant d'éditer la vue avant le .show
-    private void edit(mainController m){
+    private void editerNouvelleFenetre(mainController m){
 
-        if (m.getClass().getName() == "controller.digitalController") {
-            ((digitalController) m).chargeTemperature(Integer.parseInt(String.valueOf(listesDesCapteurs.getSelectionModel().getSelectedItem().getValue())));
+        if (m.getClass().getName() == "controller.DigitalController") {
+            ((DigitalController) m).chargerTemperature(Integer.parseInt(String.valueOf(listesDesCapteurs.getSelectionModel().getSelectedItem().getValue())));
         }
-        if (m.getClass().getName() == "controller.iconeController") {
-            ((iconeController) m).chargeImage(Integer.parseInt(String.valueOf(listesDesCapteurs.getSelectionModel().getSelectedItem().getValue())));
+        if (m.getClass().getName() == "controller.IconeController") {
+            ((IconeController) m).chargerImage(Integer.parseInt(String.valueOf(listesDesCapteurs.getSelectionModel().getSelectedItem().getValue())));
         }
-        if (m.getClass().getName() == "controller.thermometreController") {
-            ((thermometreController) m).chargeThermometre(Integer.parseInt(String.valueOf(listesDesCapteurs.getSelectionModel().getSelectedItem().getValue())));
+        if (m.getClass().getName() == "controller.ThermometreController") {
+            ((ThermometreController) m).chargerThermometre(Integer.parseInt(String.valueOf(listesDesCapteurs.getSelectionModel().getSelectedItem().getValue())));
         }
     }
 
@@ -114,7 +110,7 @@ public class capteurController implements mainController{
         stage.getIcons().add(new Image("/img/thermometer_icon.png"));
 
         stage.setScene(scene);
-        edit(loader.getController());
+        editerNouvelleFenetre(loader.getController());
         stage.showAndWait();
 
         return loader.getController();
@@ -123,7 +119,7 @@ public class capteurController implements mainController{
     
     // Permet de supprimer l'élément sélectionné
     @FXML
-    private void Remove(ActionEvent e){ 
+    private void retirerCapteur(ActionEvent e){
         
         if ( listesDesCapteurs != null )
         {

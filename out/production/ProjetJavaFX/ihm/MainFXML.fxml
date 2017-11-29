@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.HBox?>
 
 <?import javafx.scene.control.ListView?>
-<AnchorPane prefHeight="402.0" prefWidth="361.0" styleClass="background" stylesheets="/css/controls" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.capteurController">
+<AnchorPane prefHeight="402.0" prefWidth="361.0" styleClass="background" stylesheets="/css/controls" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CapteurController">
     <children>
       <HBox prefHeight="460.0" prefWidth="361.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -20,8 +20,8 @@
                 <children>
                     <ToolBar layoutX="34.0" layoutY="368.0" prefHeight="51.0" prefWidth="253.0" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="368.0">
                         <items>
-                            <Button fx:id="ajouter" onAction="#CreateWindow" text="Ajouter" />  
-                            <Button fx:id="retirer" onAction="#Remove" text="Retirer" />
+                            <Button fx:id="ajouter" onAction="#creerFenetreValidation" text="Ajouter" />
+                            <Button fx:id="retirer" onAction="#retirerCapteur" text="Retirer" />
                         </items>
                     </ToolBar>
                 </children>
@@ -29,7 +29,7 @@
           
                               <AnchorPane prefHeight="419.0" prefWidth="148.0" styleClass="background">
                 <children>
-                    <Button fx:id="quit" layoutX="21.0" layoutY="384.0" onAction="#Quit" text="Quitter" />
+                    <Button fx:id="quit" layoutX="21.0" layoutY="384.0" onAction="#quit" text="Quitter" />
                     <ComboBox fx:id="MenuAffichage" layoutX="15.0" layoutY="33.0" prefHeight="32.0" prefWidth="99.0" promptText="Affichage" AnchorPane.bottomAnchor="397.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                         <items>
                             <FXCollections fx:factory="observableArrayList">
@@ -39,7 +39,7 @@
                             </FXCollections>
                         </items>
                     </ComboBox>
-                  <Button fx:id="ok" layoutX="37.0" layoutY="229.0" mnemonicParsing="false" onAction="#Valider" text="Ok" />
+                  <Button fx:id="ok" layoutX="37.0" layoutY="229.0" mnemonicParsing="false" onAction="#creerFenetreObservation" text="Ok" />
       
                             </children>
             </AnchorPane>

@@ -16,7 +16,7 @@ import javafx.scene.image.ImageView;
  *
  * @author Axel
  */
-public class iconeController implements mainController{
+public class IconeController implements mainController{
   
     @FXML
     ImageView ImageIcone;
@@ -36,7 +36,7 @@ public class iconeController implements mainController{
         
     }
 
-    public void chargeImage(int value){
+    public void chargerImage(int value){
 
         if ( value >= 0 ){
             ImageIcone.setImage(new Image("img/Weather4.png"));

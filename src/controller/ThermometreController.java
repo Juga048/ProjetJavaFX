@@ -21,7 +21,7 @@ import modele.Capteur;
  *
  * @author Axel
  */
-public class thermometreController implements mainController{
+public class ThermometreController implements mainController{
     
     
     
@@ -43,7 +43,7 @@ public class thermometreController implements mainController{
 
     }
 
-    public void chargeThermometre(int value){
+    public void chargerThermometre(int value){
         // en supposant que température entre 0 et 50, 50 donne 1 -> barre au max
         ProgressBar.setProgress((((double) value)/50));
         indicateurThermometre.setText(String.valueOf(Integer.parseInt((String.valueOf(value))))+" °");

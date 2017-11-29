@@ -25,7 +25,7 @@ import modele.ModeleTexte;
  *
  * @author admin
  */
-public class validatorController implements mainController{
+public class ValidatorController implements mainController{
     
 
     @FXML
@@ -47,7 +47,7 @@ public class validatorController implements mainController{
     }
 
     @FXML
-    public void Cancel(ActionEvent e){
+    public void fermerFenetreValidation(ActionEvent e){
         fermerFenetre();
     }
 
@@ -55,8 +55,9 @@ public class validatorController implements mainController{
         Annuler.getScene().getWindow().hide();
     }
     // + Ajouter la vérification en cas d'insertion de caractères pour la température
+
     @FXML
-    public void Valider(ActionEvent e) {
+    public void verificationInfoSaisie(ActionEvent e) {
         Alert alert = new Alert(AlertType.ERROR);
         alert.setHeaderText("Erreur");
 
@@ -67,7 +68,7 @@ public class validatorController implements mainController{
 
         }
         else {
-            capteur = new Capteur(VilleSaisie.getText(), Integer.parseInt(TempératureSaisie.getText()));
+            capteur = new Capteur(VilleSaisie.getText());
             fermerFenetre();
         }
     }
