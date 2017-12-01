@@ -13,11 +13,8 @@ import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Alert;
+import javafx.scene.control.*;
 import javafx.scene.control.Alert.AlertType;
-import javafx.scene.control.Button;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TextField;
 import modele.Capteur;
 import modele.ModeleTexte;
 
@@ -39,9 +36,9 @@ public class ValidatorController implements mainController{
     
     @FXML
     private TextField VilleSaisie;
-    
+
     @FXML
-    private TextField TempératureSaisie;
+    ComboBox MenuGenerateur;
 
     private Capteur capteur;
 
@@ -59,19 +56,20 @@ public class ValidatorController implements mainController{
     }
     // + Ajouter la vérification en cas d'insertion de caractères pour la température
 
+
+    // Vérifie info et remplis le capteur
     @FXML
     public void verificationInfoSaisie(ActionEvent e) {
         Alert alert = new Alert(AlertType.ERROR);
         alert.setHeaderText("Erreur");
 
-
-        if (VilleSaisie.getText().isEmpty() || TempératureSaisie.getText().isEmpty()){
+        if (VilleSaisie.getText().isEmpty() || MenuGenerateur.getSelectionModel().getSelectedItem() == null){
             alert.setContentText("Erreur, remplissez les champs !");
             alert.showAndWait();
 
         }
         else {
-            //capteur = new Capteur(VilleSaisie.getText());
+            capteur = new Capteur(VilleSaisie.getText(),2000);
             fermerFenetre();
         }
     }

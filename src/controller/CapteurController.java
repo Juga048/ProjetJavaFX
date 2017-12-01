@@ -23,6 +23,8 @@ import javafx.stage.Stage;
 import modele.Capteur;
 import modele.ModeleTexte;
 
+import javax.xml.validation.Validator;
+
 /**
  *
  * @author jugachon1
@@ -89,11 +91,12 @@ public class CapteurController implements mainController{
     }
 
     // méthode permettant d'éditer la vue avant le .show
-    private void editerNouvelleFenetre(mainController m){
-
-        m.setValeur(Integer.parseInt(String.valueOf(listesDesCapteurs.getSelectionModel().getSelectedItem().getValue())));
-        m.initialize();
-
+    private void editerNouvelleFenetre(mainController m) {
+        if (!(m.getClass().getName().toString() == "controller.ValidatorController")){
+            m.setValeur(Integer.parseInt(String.valueOf(listesDesCapteurs.getSelectionModel().getSelectedItem().getValue())));
+            m.initialize();
+        }
+        return;
     }
 
 

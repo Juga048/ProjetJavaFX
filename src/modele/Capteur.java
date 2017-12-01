@@ -36,6 +36,8 @@ public class Capteur extends GenerateurTemperature implements Runnable{
     public void setName(String nom){name.set(nom);}
     public String getName(){return name.get();}
     public StringProperty NameProperty(){return name;}
+
+
     
     
 
