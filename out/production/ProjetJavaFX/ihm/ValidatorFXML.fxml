@@ -1,55 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<?import java.lang.String?>
-<?import javafx.collections.FXCollections?>
 <AnchorPane id="AnchorPane" prefHeight="273.0" prefWidth="271.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ValidatorController">
    <children>
-      <SplitPane dividerPositions="0.7556818181818182" layoutX="-49.0" layoutY="-27.0" orientation="VERTICAL" prefHeight="205.0" prefWidth="217.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ComboBox fx:id="MenuGenerateur" layoutY="142.0" prefHeight="25.0" prefWidth="271.0" AnchorPane.bottomAnchor="106.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="142.0">
+          <items>
+              <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Génération Random" />
+                  <String fx:value="Génération entre x et y" />
+                  <String fx:value="Génération évolutive" />
+              </FXCollections>
+          </items>
+       </ComboBox>
+      <TextField fx:id="TempsSaisie" layoutY="71.0" prefHeight="71.0" prefWidth="278.0" promptText="Temps (ms)" AnchorPane.bottomAnchor="131.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="71.0" />
+      <ToolBar layoutY="228.0" prefHeight="45.0" prefWidth="271.0" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="228.0">
         <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
-               <children>
-                  <SplitPane dividerPositions="0.5" layoutX="22.0" layoutY="-20.0" orientation="VERTICAL" prefHeight="130.0" prefWidth="196.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                    <items>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
-                           <children>
-                              <TextField fx:id="VilleSaisie" layoutX="31.0" layoutY="18.0" prefHeight="61.0" prefWidth="194.0" promptText="Ville" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                           </children>
-                        </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
-                           <children>
-                              <ComboBox fx:id="MenuGenerateur" layoutX="59.0" layoutY="36.0" prefWidth="150.0" >
-                                  <items>
-                                      <FXCollections fx:factory="observableArrayList">
-                                          <String fx:value="Génération Random" />
-                                          <String fx:value="Génération entre x et y" />
-                                          <String fx:value="Génération évolutive" />
-                                      </FXCollections>
-                                  </items>
-                               </ComboBox>
-                           </children>
-                        </AnchorPane>
-                    </items>
-                  </SplitPane>
-               </children>
-            </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
-               <children>
-                  <ToolBar prefHeight="88.0" prefWidth="253.0" styleClass="background" AnchorPane.bottomAnchor="-25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                    <items>
-                      <Button fx:id="Valider" mnemonicParsing="false" onAction="#verificationInfoSaisie" text="Valider" />
-                      <Button fx:id="Annuler" layoutX="10.0" layoutY="58.0" mnemonicParsing="false" onAction="#fermerFenetreValidation" text="Annuler" />
-                    </items>
-                  </ToolBar>
-               </children>
-            </AnchorPane>
+          <Button fx:id="Valider" mnemonicParsing="false" onAction="#verificationInfoSaisie" text="Valider" />
+          <Button fx:id="Annuler" layoutX="10.0" layoutY="58.0" mnemonicParsing="false" onAction="#fermerFenetreValidation" text="Annuler" />
         </items>
-      </SplitPane>
+      </ToolBar>
+      <TextField fx:id="VilleSaisie" prefHeight="71.0" prefWidth="278.0" promptText="Ville" AnchorPane.bottomAnchor="202.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
    </children>
 </AnchorPane>

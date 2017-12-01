@@ -23,6 +23,7 @@ import javafx.stage.Stage;
 import modele.Capteur;
 import modele.ModeleTexte;
 
+
 import javax.xml.validation.Validator;
 
 /**
@@ -45,7 +46,6 @@ public class CapteurController implements mainController{
     
     @FXML
     private void quit (ActionEvent e){
-
         quit.getScene().getWindow().hide();
     }
    

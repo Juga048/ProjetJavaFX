@@ -65,6 +65,7 @@ public class Capteur extends GenerateurTemperature implements Runnable{
             catch (InterruptedException ex) 
             {
                 Logger.getLogger(Capteur.class.getName()).log(Level.SEVERE, null, ex);
+                Thread.currentThread().interrupt();
             }
             Platform.runLater(()-> generationAleatoire(this));
             }

@@ -38,6 +38,9 @@ public class ValidatorController implements mainController{
     private TextField VilleSaisie;
 
     @FXML
+    private TextField TempsSaisie;
+
+    @FXML
     ComboBox MenuGenerateur;
 
     private Capteur capteur;
@@ -69,7 +72,7 @@ public class ValidatorController implements mainController{
 
         }
         else {
-            capteur = new Capteur(VilleSaisie.getText(),2000);
+            capteur = new Capteur(VilleSaisie.getText(),Long.parseLong(TempsSaisie.getText()));
             fermerFenetre();
         }
     }
