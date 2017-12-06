@@ -15,7 +15,9 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.Alert.AlertType;
+
 import modele.Capteur;
+import modele.GenerateurAleatoire;
 import modele.ModeleTexte;
 
 /**
@@ -72,7 +74,8 @@ public class ValidatorController implements mainController{
 
         }
         else {
-            capteur = new Capteur(VilleSaisie.getText(),Long.parseLong(TempsSaisie.getText()));
+            //System.out.println(MenuGenerateur.getSelectionModel().getSelectedItem().getClass());
+            capteur = new Capteur(VilleSaisie.getText(),Long.parseLong(TempsSaisie.getText()),new GenerateurAleatoire());
             fermerFenetre();
         }
     }

@@ -21,12 +21,12 @@ public class ModeleTexte {
         public ListProperty<Capteur> lesCapteursProperty() {return lesCapteurs;}
 
     public void genererCapteurs() {
-        lesCapteurs.add(new Capteur("Clermont-Ferrand",2000));
-        lesCapteurs.add(new Capteur("Paris",2000));
-        lesCapteurs.add(new Capteur("Marseille",2000));
-        lesCapteurs.add(new Capteur("Toulouse",2000));
-        lesCapteurs.add(new Capteur("Nice",2000));
-        lesCapteurs.add(new Capteur("Strasbourg",2000));
+        lesCapteurs.add(new Capteur("Clermont-Ferrand",2000,new GenerateurAleatoire()));
+        lesCapteurs.add(new Capteur("Paris",2000,new GenerateurAleatoire()));
+        lesCapteurs.add(new Capteur("Marseille",2000,new GenerateurAleatoire()));
+        lesCapteurs.add(new Capteur("Toulouse",2000,new GenerateurAleatoire()));
+        lesCapteurs.add(new Capteur("Nice",2000,new GenerateurAleatoire()));
+        lesCapteurs.add(new Capteur("Strasbourg",2000,new GenerateurAleatoire()));
     }
     
     public void ajouterCapteur(Capteur C){

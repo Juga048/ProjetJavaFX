@@ -23,12 +23,16 @@ import javafx.application.Platform;
  *
  * @author jugachon1
  */
-public class Capteur extends GenerateurTemperature implements Runnable{
-    
-    private final SimpleIntegerProperty value = new SimpleIntegerProperty();
-    private final StringProperty name = new SimpleStringProperty();
+public class Capteur implements Runnable{
+
+    private SimpleIntegerProperty value = new SimpleIntegerProperty();
+    private StringProperty name = new SimpleStringProperty();
     private long temps;
-    
+    private Generateur generateur;
+
+
+
+
     public void setValue(int valeur){value.set(valeur);}
     public int getValue(){return value.get();}
     public SimpleIntegerProperty ValueProperty(){return value;}
@@ -41,11 +45,13 @@ public class Capteur extends GenerateurTemperature implements Runnable{
     
     
 
-        public Capteur(String nom, long temps){
+        public Capteur(String nom, long temps, Generateur generateur){
             name.set(nom);
-            generationAleatoire(this);
+            this.generateur = generateur;
+            this.setValue(generateur.genererUneTemperature());
+
             this.temps = temps;
-            new Thread(this).start();      
+            new Thread(this).start();
         }
 
 
@@ -67,7 +73,7 @@ public class Capteur extends GenerateurTemperature implements Runnable{
                 Logger.getLogger(Capteur.class.getName()).log(Level.SEVERE, null, ex);
                 Thread.currentThread().interrupt();
             }
-            Platform.runLater(()-> generationAleatoire(this));
+            Platform.runLater(()-> this.setValue(generateur.genererUneTemperature()));
             }
 
         }           
