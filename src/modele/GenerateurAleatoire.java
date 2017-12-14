@@ -5,6 +5,7 @@ import static java.lang.StrictMath.round;
 
 public class GenerateurAleatoire extends Generateur{
 
+
     @Override
     public int genererUneTemperature() {
         int max = 1000;

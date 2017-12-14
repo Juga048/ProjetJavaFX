@@ -16,7 +16,7 @@ import javafx.scene.image.ImageView;
  *
  * @author Axel
  */
-public class IconeController implements mainController{
+public class IconeController implements MainController{
 
     public int val;
     @Override

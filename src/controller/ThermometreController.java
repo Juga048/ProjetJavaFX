@@ -21,7 +21,7 @@ import modele.Capteur;
  *
  * @author Axel
  */
-public class ThermometreController implements mainController{
+public class ThermometreController implements MainController{
     
     public int val;
     @Override

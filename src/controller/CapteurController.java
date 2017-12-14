@@ -21,7 +21,8 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import modele.Capteur;
-import modele.ModeleTexte;
+import modele.CapteurTemporise;
+import modele.ModeleListeCapteur;
 
 
 import javax.xml.validation.Validator;
@@ -30,7 +31,7 @@ import javax.xml.validation.Validator;
  *
  * @author jugachon1
  */
-public class CapteurController implements mainController{
+public class CapteurController implements MainController{
 
 
 
@@ -91,7 +92,7 @@ public class CapteurController implements mainController{
     }
 
     // méthode permettant d'éditer la vue avant le .show
-    private void editerNouvelleFenetre(mainController m) {
+    private void editerNouvelleFenetre(MainController m) {
         if (!(m.getClass().getName().toString() == "controller.ValidatorController")){
             m.setValeur(Integer.parseInt(String.valueOf(listesDesCapteurs.getSelectionModel().getSelectedItem().getValue())));
             m.initialize();
@@ -100,7 +101,7 @@ public class CapteurController implements mainController{
     }
 
 
-    private mainController nouvelleFenetre(String nomDuFichierFXML, String titre) throws IOException {
+    private MainController nouvelleFenetre(String nomDuFichierFXML, String titre) throws IOException {
         
         FXMLLoader loader = new FXMLLoader(getClass().getResource(nomDuFichierFXML));
         Parent root = loader.load();
@@ -134,9 +135,9 @@ public class CapteurController implements mainController{
     @FXML
     private ListView<Capteur> listesDesCapteurs;
     
-    public ObjectProperty<ModeleTexte> leModele = new SimpleObjectProperty<>(new ModeleTexte());
-        public ModeleTexte getLeModele(){return leModele.get();}
-        public ObjectProperty<ModeleTexte> leModeleProperty(){return leModele;}
+    public ObjectProperty<ModeleListeCapteur> leModele = new SimpleObjectProperty<>(new ModeleListeCapteur());
+        public ModeleListeCapteur getLeModele(){return leModele.get();}
+        public ObjectProperty<ModeleListeCapteur> leModeleProperty(){return leModele;}
 
 
     @FXML
@@ -150,7 +151,7 @@ public class CapteurController implements mainController{
                 protected void updateItem(Capteur item, boolean empty) {
                     super.updateItem(item, empty);
                     if (!empty) {
-                        textProperty().bind(item.NameProperty().concat(" (").concat(item.ValueProperty()).concat("°)"));
+                        textProperty().bind(item.nameProperty().concat(" (").concat(item.valueProperty()).concat("°)"));
                         
                         
                                       

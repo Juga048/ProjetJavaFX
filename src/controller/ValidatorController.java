@@ -17,14 +17,16 @@ import javafx.scene.control.*;
 import javafx.scene.control.Alert.AlertType;
 
 import modele.Capteur;
+import modele.CapteurTemporise;
+import modele.Generateur;
 import modele.GenerateurAleatoire;
-import modele.ModeleTexte;
+
 
 /**
  *
  * @author admin
  */
-public class ValidatorController implements mainController{
+public class ValidatorController implements MainController{
 
 
     @Override
@@ -75,7 +77,7 @@ public class ValidatorController implements mainController{
         }
         else {
             //System.out.println(MenuGenerateur.getSelectionModel().getSelectedItem().getClass());
-            capteur = new Capteur(VilleSaisie.getText(),Long.parseLong(TempsSaisie.getText()),new GenerateurAleatoire());
+            capteur = new CapteurTemporise(VilleSaisie.getText(),Long.parseLong(TempsSaisie.getText()),new GenerateurAleatoire());
             fermerFenetre();
         }
     }

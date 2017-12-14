@@ -9,7 +9,7 @@ package controller;
  *
  * @author axbruget1
  */
-interface mainController {
+interface MainController {
     void setValeur(int valeur);
 
     void initialize();

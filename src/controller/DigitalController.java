@@ -14,13 +14,13 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 
 import javafx.scene.control.Label;
-import modele.ModeleTexte;
+
 
 /**
  *
  * @author Axel
  */
-public class DigitalController implements mainController{
+public class DigitalController implements MainController{
 
     public int val;
     @Override

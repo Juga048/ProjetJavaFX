@@ -11,7 +11,7 @@ import javafx.beans.property.SimpleListProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
-public class ModeleTexte {
+public class ModeleListeCapteur {
 
     private ObservableList<Capteur> lesCapteursObs = FXCollections.observableArrayList();
 
@@ -21,12 +21,17 @@ public class ModeleTexte {
         public ListProperty<Capteur> lesCapteursProperty() {return lesCapteurs;}
 
     public void genererCapteurs() {
-        lesCapteurs.add(new Capteur("Clermont-Ferrand",2000,new GenerateurAleatoire()));
-        lesCapteurs.add(new Capteur("Paris",2000,new GenerateurAleatoire()));
-        lesCapteurs.add(new Capteur("Marseille",2000,new GenerateurAleatoire()));
-        lesCapteurs.add(new Capteur("Toulouse",2000,new GenerateurAleatoire()));
-        lesCapteurs.add(new Capteur("Nice",2000,new GenerateurAleatoire()));
-        lesCapteurs.add(new Capteur("Strasbourg",2000,new GenerateurAleatoire()));
+        lesCapteurs.add(new CapteurTemporise("Clermont-Ferrand",2000,new GenerateurAleatoire()));
+        lesCapteurs.add(new CapteurTemporise("Paris",2000,new GenerateurAleatoire()));
+        lesCapteurs.add(new CapteurTemporise("Marseille",2000,new GenerateurAleatoire()));
+        lesCapteurs.add(new CapteurTemporise("Toulouse",2000,new GenerateurAleatoire()));
+        lesCapteurs.add(new CapteurTemporise("Nice",2000,new GenerateurAleatoire()));
+        lesCapteurs.add(new CapteurTemporise("Strasbourg",2000,new GenerateurAleatoire()));
+
+        CapteurSuper c = new CapteurSuper("AAA");
+        c.ajouterSousCapteurs(lesCapteurs.get(1));
+        c.ajouterSousCapteurs(lesCapteurs.get(2));
+        lesCapteurs.add(c);
     }
     
     public void ajouterCapteur(Capteur C){
