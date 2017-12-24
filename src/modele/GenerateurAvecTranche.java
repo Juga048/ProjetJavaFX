@@ -3,6 +3,7 @@ package modele;
 import static java.lang.StrictMath.abs;
 import static java.lang.StrictMath.round;
 
+
 public class GenerateurAvecTranche extends Generateur{
     
     /*static{
@@ -12,11 +13,12 @@ public class GenerateurAvecTranche extends Generateur{
     
     @Override
     public int genererUneTemperature() {
-        int max = 5;
-        int min = -5;
-        int temperature = (int) round(0 + (Math.random() * (abs(min)+max - 0))) - abs(min);
+        int temperature = (int) round(0 + (Math.random() * (abs(super.getTrancheMinimum())+super.getTrancheMaximum() - 0))) - abs(super.getTrancheMinimum());
 
         return temperature;
-       
     }
+    
+
+       
+    
 }

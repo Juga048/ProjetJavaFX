@@ -9,7 +9,7 @@ public class GenerateurEvolutif extends Generateur{
     
     @Override
     public int genererUneTemperature() {
-
-        return 0;
+        super.setValeurIntiale(super.getValeurIntiale()+super.getValeurAjoutee());
+        return super.getValeurIntiale();
     }
 }

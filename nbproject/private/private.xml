@@ -3,14 +3,25 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/admin/Desktop/Projet/ProjetJavaFX/src/controller/ValidatorController.java</file>
-            <file>file:/C:/Users/admin/Desktop/Projet/ProjetJavaFX/src/controller/CapteurController.java</file>
-            <file>file:/C:/Users/admin/Desktop/Projet/ProjetJavaFX/src/controller/DigitalController.java</file>
-            <file>file:/C:/Users/admin/Desktop/Projet/ProjetJavaFX/src/launch/Main.java</file>
-            <file>file:/C:/Users/admin/Desktop/Projet/ProjetJavaFX/src/controller/ThermometreController.java</file>
-            <file>file:/C:/Users/admin/Desktop/Projet/ProjetJavaFX/src/ihm/ValidatorFXML.fxml</file>
-            <file>file:/C:/Users/admin/Desktop/Projet/ProjetJavaFX/src/ihm/MainFXML.fxml</file>
-            <file>file:/C:/Users/admin/Desktop/Projet/ProjetJavaFX/src/ihm/DigitalFXML.fxml</file>
+            <file>file:/C:/Users/Axel/Desktop/Projet/ProjetJavaFX/src/controller/IconeController.java</file>
+            <file>file:/C:/Users/Axel/Desktop/Projet/ProjetJavaFX/src/modele/GenerateurAvecTranche.java</file>
+            <file>file:/C:/Users/Axel/Desktop/Projet/ProjetJavaFX/src/controller/CapteurController.java</file>
+            <file>file:/C:/Users/Axel/Desktop/Projet/ProjetJavaFX/src/controller/ValidatorController.java</file>
+            <file>file:/C:/Users/Axel/Desktop/Projet/ProjetJavaFX/src/ihm/IconeFXML.fxml</file>
+            <file>file:/C:/Users/Axel/Desktop/Projet/ProjetJavaFX/src/modele/CapteurSuper.java</file>
+            <file>file:/C:/Users/Axel/Desktop/Projet/ProjetJavaFX/src/ihm/MainFXML.fxml</file>
+            <file>file:/C:/Users/Axel/Desktop/Projet/ProjetJavaFX/src/controller/DigitalController.java</file>
+            <file>file:/C:/Users/Axel/Desktop/Projet/ProjetJavaFX/src/modele/Generateur.java</file>
+            <file>file:/C:/Users/Axel/Desktop/Projet/ProjetJavaFX/src/img/Weather3.png</file>
+            <file>file:/C:/Users/Axel/Desktop/Projet/ProjetJavaFX/src/modele/ModeleListeCapteur.java</file>
+            <file>file:/C:/Users/Axel/Desktop/Projet/ProjetJavaFX/src/ihm/DigitalFXML.fxml</file>
+            <file>file:/C:/Users/Axel/Desktop/Projet/ProjetJavaFX/src/modele/GenerateurEvolutif.java</file>
+            <file>file:/C:/Users/Axel/Desktop/Projet/ProjetJavaFX/src/ihm/ThermometreFXML.fxml</file>
+            <file>file:/C:/Users/Axel/Desktop/Projet/ProjetJavaFX/src/controller/ThermometreController.java</file>
+            <file>file:/C:/Users/Axel/Desktop/Projet/ProjetJavaFX/src/modele/GenerateurAleatoire.java</file>
+            <file>file:/C:/Users/Axel/Desktop/Projet/ProjetJavaFX/src/img/Weather4.png</file>
+            <file>file:/C:/Users/Axel/Desktop/Projet/ProjetJavaFX/src/launch/Main.java</file>
+            <file>file:/C:/Users/Axel/Desktop/Projet/ProjetJavaFX/src/modele/Capteur.java</file>
         </group>
     </open-files>
 </project-private>
