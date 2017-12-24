@@ -1,9 +1,6 @@
 package modele;
 
 import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javafx.application.Platform;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
@@ -43,4 +40,5 @@ public class CapteurSuper implements Capteur{
 
         return total;
     }
+
 }

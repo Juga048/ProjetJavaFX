@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ValidatorController">
+   <bottom>
+      <ToolBar  BorderPane.alignment="CENTER">
+        <items>
+          <Button fx:id="Valider" mnemonicParsing="false" onAction="#verificationInfoSaisie" text="Valider" />
+          <Button fx:id="Annuler" mnemonicParsing="false" onAction="#fermerFenetreValidation" text="Annuler" />
+        </items>
+      </ToolBar>
+   </bottom>
+   <center>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="VilleSaisie" />
+            <TextField fx:id="TempsSaisie" promptText="Temps (ms)" />
+              <ComboBox fx:id="MenuGenerateur">
+                  <items>
+                      <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Génération Aléatoire" />
+                        <String fx:value="Génération entre x et y" />
+                        <String fx:value="Génération évolutive" />
+                      </FXCollections>
+                  </items>
+              </ComboBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

@@ -9,11 +9,9 @@ package modele;
 
 
 import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
-import static java.lang.StrictMath.round;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.application.Platform;
@@ -44,7 +42,6 @@ public class CapteurTemporise implements Capteur, Runnable{
     public StringProperty nameProperty(){return name;}
 
 
-
     public CapteurTemporise(String nom, long temps, Generateur generateur){
         this.setName(nom);
         this.generateur = generateur;
@@ -55,8 +52,8 @@ public class CapteurTemporise implements Capteur, Runnable{
         new Thread(this).start();
     }
 
-    public void ArreterThread(CapteurTemporise c){
-        c.isRunning = false;
+    public void ArreterThread(){
+        this.isRunning = false;
     }
 
     @Override
@@ -75,6 +72,7 @@ public class CapteurTemporise implements Capteur, Runnable{
             }
             Platform.runLater(()-> this.setValue(this.generateur.genererUneTemperature()));
         }
+        
 
     }
 }

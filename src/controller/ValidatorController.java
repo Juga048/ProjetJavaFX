@@ -5,20 +5,15 @@
  */
 package controller;
 
-import java.net.URL;
-import java.util.ResourceBundle;
-import javafx.beans.property.ObjectProperty;
-import javafx.beans.property.SimpleObjectProperty;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import javafx.event.ActionEvent;
-import javafx.event.Event;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.Alert.AlertType;
 
 import modele.Capteur;
 import modele.CapteurTemporise;
-import modele.Generateur;
 import modele.GenerateurAleatoire;
 
 
@@ -70,15 +65,29 @@ public class ValidatorController implements MainController{
         Alert alert = new Alert(AlertType.ERROR);
         alert.setHeaderText("Erreur");
 
-        if (VilleSaisie.getText().isEmpty() || MenuGenerateur.getSelectionModel().getSelectedItem() == null){
+        if (VilleSaisie.getText().isEmpty() || TempsSaisie.getText().isEmpty() || MenuGenerateur.getSelectionModel().getSelectedItem() == null){
+            
             alert.setContentText("Erreur, remplissez les champs !");
             alert.showAndWait();
-
+            
         }
+        
         else {
-            //System.out.println(MenuGenerateur.getSelectionModel().getSelectedItem().getClass());
-            capteur = new CapteurTemporise(VilleSaisie.getText(),Long.parseLong(TempsSaisie.getText()),new GenerateurAleatoire());
-            fermerFenetre();
+            
+            // Début Expression régulière
+            Pattern p = Pattern.compile("[0-9]+");
+            Matcher m = p.matcher(TempsSaisie.getText());
+            boolean b = m.matches();
+            
+            if (!b){         
+                alert.setContentText("Erreur, Que des chiffres pour le temps !");
+                alert.showAndWait();
+            }
+            
+            else{
+                capteur = new CapteurTemporise(VilleSaisie.getText(),Long.parseLong(TempsSaisie.getText()),new GenerateurAleatoire());
+                fermerFenetre();
+            }
         }
     }
 

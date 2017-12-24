@@ -5,6 +5,9 @@ import static java.lang.StrictMath.round;
 
 public class GenerateurAleatoire extends Generateur{
 
+    /*static{
+        Generateur.enregistrer(GenerateurAleatoire.class);
+    }*/
 
     @Override
     public int genererUneTemperature() {

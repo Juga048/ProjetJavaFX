@@ -21,11 +21,11 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import modele.Capteur;
-import modele.CapteurTemporise;
 import modele.ModeleListeCapteur;
+import modele.CapteurTemporise;
+import modele.GenerateurAleatoire;
 
 
-import javax.xml.validation.Validator;
 
 /**
  *
@@ -48,6 +48,7 @@ public class CapteurController implements MainController{
     @FXML
     private void quit (ActionEvent e){
         quit.getScene().getWindow().hide();
+       
     }
    
     @FXML
@@ -58,7 +59,7 @@ public class CapteurController implements MainController{
     @FXML 
     private void creerFenetreValidation(ActionEvent event) throws IOException{
 
-        ValidatorController v = (ValidatorController) nouvelleFenetre("/ihm/ValidatorFXML.fxml", "Ajouter un capteur");
+        ValidatorController v = (ValidatorController) nouvelleFenetre("/ihm/ValidateFXML.fxml", "Ajouter un capteur");
 
         Capteur c = v.getCapteur();
         if (c != null){
@@ -140,7 +141,8 @@ public class CapteurController implements MainController{
         public ObjectProperty<ModeleListeCapteur> leModeleProperty(){return leModele;}
 
 
-    @FXML
+    
+    @Override
     public void initialize() {
         leModele.get().genererCapteurs();
 
