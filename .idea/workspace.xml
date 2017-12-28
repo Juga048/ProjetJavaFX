@@ -2,31 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b13c3d16-2c82-4add-ae6b-6f768e44e293" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modele/CapteurSuper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modele/CapteurTemporise.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/modele/ModeleTexte.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/modele/ModeleTexte.java" afterPath="$PROJECT_DIR$/src/modele/ModeleListeCapteur.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/capteurController$1.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/capteurController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/capteurController.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/capteurController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/digitalController.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/digitalController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/iconeController.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/iconeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/mainController.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/mainController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/thermometreController.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/thermometreController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/validatorController.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/validatorController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/modele/Capteur.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/modele/Capteur.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/modele/GenerateurAleatoire.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/modele/GenerateurAleatoire.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/ihm/ValidatorFXML.fxml" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/ihm/ValidatorFXML.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/CapteurController.java" afterPath="$PROJECT_DIR$/src/controller/CapteurController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/DigitalController.java" afterPath="$PROJECT_DIR$/src/controller/DigitalController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/IconeController.java" afterPath="$PROJECT_DIR$/src/controller/IconeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/MainController.java" afterPath="$PROJECT_DIR$/src/controller/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/ThermometreController.java" afterPath="$PROJECT_DIR$/src/controller/ThermometreController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/ValidatorController.java" afterPath="$PROJECT_DIR$/src/controller/ValidatorController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ihm/ValidatorFXML.fxml" afterPath="$PROJECT_DIR$/src/ihm/ValidatorFXML.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modele/Capteur.java" afterPath="$PROJECT_DIR$/src/modele/Capteur.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modele/Generateur.java" afterPath="$PROJECT_DIR$/src/modele/Generateur.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modele/GenerateurAleatoire.java" afterPath="$PROJECT_DIR$/src/modele/GenerateurAleatoire.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/capteurController$1.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/capteurController$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/capteurController.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/capteurController.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/digitalController.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/digitalController.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/iconeController.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/iconeController.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/mainController.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/mainController.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/thermometreController.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/thermometreController.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/validatorController.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/controller/validatorController.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/ihm/ThermometreFXML.fxml" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/ihm/ThermometreFXML.fxml" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/launch/Main.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/launch/Main.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/modele/Capteur.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/modele/Capteur.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/modele/CapteurSuper.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/modele/CapteurSuper.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/modele/CapteurTemporise.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/modele/CapteurTemporise.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/modele/Generateur.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/modele/Generateur.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/modele/GenerateurAleatoire.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/modele/GenerateurAleatoire.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/modele/GenerateurAvecTranche.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/modele/GenerateurAvecTranche.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/modele/GenerateurEvolutif.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/modele/GenerateurEvolutif.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJavaFX/modele/ModeleListeCapteur.class" afterPath="$PROJECT_DIR$/out/production/ProjetJavaFX/modele/ModeleListeCapteur.class" />
+      <change beforePath="$PROJECT_DIR$/src/ihm/DigitalFXML.fxml" afterPath="$PROJECT_DIR$/src/ihm/DigitalFXML.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/ihm/IconeFXML.fxml" afterPath="$PROJECT_DIR$/src/ihm/IconeFXML.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/ihm/ThermometreFXML.fxml" afterPath="$PROJECT_DIR$/src/ihm/ThermometreFXML.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,55 +38,108 @@
       <file leaf-file-name="CapteurController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/CapteurController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="46" column="4" lean-forward="true" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+            <state relative-caret-position="782">
+              <caret line="46" column="4" lean-forward="false" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Generateur.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modele/Generateur.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DigitalFXML.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ihm/DigitalFXML.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="20" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DigitalController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/DigitalController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#974#975#0" expanded="true" />
-                <element signature="e#1024#1025#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Generateur.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/modele/Generateur.java">
+      <file leaf-file-name="IconeFXML.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ihm/IconeFXML.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="238">
+              <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
               <folding />
             </state>
           </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="IconeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/IconeController.java">
+      <file leaf-file-name="MainFXML.fxml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ihm/MainFXML.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+            <state relative-caret-position="427">
+              <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThermometreFXML.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ihm/ThermometreFXML.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ValidateFXML.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ihm/ValidateFXML.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ValidatorController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/ValidatorController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="47" column="28" lean-forward="false" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+            <state relative-caret-position="433">
+              <caret line="47" column="23" lean-forward="false" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ThermometreController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/ThermometreController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="23" column="60" lean-forward="false" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -97,60 +147,11 @@
       <file leaf-file-name="CapteurTemporise.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modele/CapteurTemporise.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
+            <state relative-caret-position="748">
               <caret line="54" column="6" lean-forward="false" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1635#1636#0" expanded="true" />
-                <element signature="e#1670#1671#0" expanded="true" />
-                <marker date="1513259889111" expanded="true" signature="2133:2138" ph="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CapteurSuper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modele/CapteurSuper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GenerateurEvolutif.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modele/GenerateurEvolutif.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Capteur.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modele/Capteur.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ModeleListeCapteur.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modele/ModeleListeCapteur.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -188,11 +189,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/css/style.css" />
-        <option value="$PROJECT_DIR$/src/ihm/IconeFXML.fxml" />
         <option value="$PROJECT_DIR$/src/launch/Main.java" />
-        <option value="$PROJECT_DIR$/src/ihm/DigitalFXML.fxml" />
         <option value="$PROJECT_DIR$/src/controller/iconeController.java" />
-        <option value="$PROJECT_DIR$/src/ihm/ThermometreFXML.fxml" />
         <option value="$PROJECT_DIR$/src/controller/thermometreController.java" />
         <option value="$PROJECT_DIR$/src/controller/digitalController.java" />
         <option value="$PROJECT_DIR$/src/controller/validatorController.java" />
@@ -215,6 +213,9 @@
         <option value="$PROJECT_DIR$/src/modele/ModeleListeCapteur.java" />
         <option value="$PROJECT_DIR$/src/modele/CapteurTemporise.java" />
         <option value="$PROJECT_DIR$/src/controller/CapteurController.java" />
+        <option value="$PROJECT_DIR$/src/ihm/DigitalFXML.fxml" />
+        <option value="$PROJECT_DIR$/src/ihm/IconeFXML.fxml" />
+        <option value="$PROJECT_DIR$/src/ihm/ThermometreFXML.fxml" />
       </list>
     </option>
   </component>
@@ -224,7 +225,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="width" value="976" />
     <option name="height" value="1038" />
@@ -244,10 +245,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -294,12 +294,17 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/projet-javafx_combe_deffradas" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -313,7 +318,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -332,13 +344,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="ProjetJavaFX" />
       <envs />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -374,12 +379,6 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -414,6 +413,12 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
     <recent_temporary>
       <list size="1">
         <item index="0" class="java.lang.String" itemvalue="Application.Main" />
@@ -422,6 +427,9 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -456,7 +464,8 @@
     <option name="totallyTimeSpent" value="59971000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -464,25 +473,25 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18498942" sideWeight="0.5729167" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18383518" sideWeight="0.5754026" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18383518" sideWeight="0.42459735" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18498942" sideWeight="0.42708334" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15416667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15373352" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.49791667" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.49583334" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -515,7 +524,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ihm/ThermometreFXML.fxml" />
     <entry file="file://$PROJECT_DIR$/src/controller/CapteurController.java" />
     <entry file="file://$PROJECT_DIR$/src/controller/DigitalController.java" />
     <entry file="file://$PROJECT_DIR$/src/controller/IconeController.java" />
@@ -532,13 +540,7 @@
     <entry file="file://$PROJECT_DIR$/src/ihm/IconeFXML.fxml" />
     <entry file="file://$PROJECT_DIR$/src/controller/ThermometreController.java" />
     <entry file="file://$PROJECT_DIR$/src/ihm/ValidatorFXML.fxml" />
-    <entry file="jar://E:/Disque Dure/Java/jdk-9.0.1/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="1781" column="0" lean-forward="false" selection-start-line="1781" selection-start-column="0" selection-end-line="1781" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://E:/Disque Dure/Java/jdk-9.0.1/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java" />
     <entry file="file://$PROJECT_DIR$/src/css/style.css" />
     <entry file="file://$PROJECT_DIR$/src/css/controls/jfx-combo-box.css" />
     <entry file="file://$PROJECT_DIR$/src/css/controls/jfx-dialog-layout.css" />
@@ -567,39 +569,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ihm/IconeFXML.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ihm/ThermometreFXML.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ihm/DigitalFXML.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/modele/GenerateurTemperature.java" />
     <entry file="file://$PROJECT_DIR$/src/launch/Main.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -619,28 +588,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ihm/MainFXML.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ihm/ValidatorFXML.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="77" lean-forward="false" selection-start-line="23" selection-start-column="77" selection-end-line="23" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ihm/ValidatorFXML.fxml" />
     <entry file="file://$PROJECT_DIR$/src/modele/GenerateurAleatoire.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -659,16 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/DigitalController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/IconeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -679,19 +617,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/ThermometreController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="23" column="60" lean-forward="false" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
+        <state relative-caret-position="238">
+          <caret line="23" column="57" lean-forward="false" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/ValidatorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="47" column="28" lean-forward="false" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -699,23 +627,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modele/ModeleListeCapteur.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
-          <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+          <caret line="40" column="1" lean-forward="false" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modele/Capteur.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="102">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -725,8 +651,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modele/CapteurSuper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        <state relative-caret-position="442">
+          <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -735,43 +661,183 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modele/CapteurTemporise.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
+        <state relative-caret-position="748">
           <caret line="54" column="6" lean-forward="false" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1635#1636#0" expanded="true" />
-            <element signature="e#1670#1671#0" expanded="true" />
-            <marker date="1513259889111" expanded="true" signature="2133:2138" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/CapteurController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="46" column="4" lean-forward="true" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#974#975#0" expanded="true" />
-            <element signature="e#1024#1025#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="782">
+          <caret line="46" column="4" lean-forward="false" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modele/Generateur.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ValidatorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="47" column="23" lean-forward="false" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ihm/ValidateFXML.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/DigitalController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ihm/IconeFXML.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ihm/DigitalFXML.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="20" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ihm/ThermometreFXML.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ihm/MainFXML.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>ProjetJavaFX</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>9.0 (1)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>ProjetJavaFX</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

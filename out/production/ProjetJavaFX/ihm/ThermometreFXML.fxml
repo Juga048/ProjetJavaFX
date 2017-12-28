@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="637.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ThermometreController">
- <children>
-    <SplitPane dividerPositions="0.6991643454038997" prefHeight="482.0" prefWidth="462.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        <items>
-            <AnchorPane>
-                <children>
-                    <ProgressBar fx:id="ProgressBar" layoutX="101.0" layoutY="185.0" prefWidth="200.0" progress="0.0" rotate="270.0" />
-                  <Label fx:id="indicateurThermometre" layoutX="221.0" layoutY="219.0" text="Label" />
-                </children>
-            </AnchorPane>
-          
-            <AnchorPane prefHeight="316.0" prefWidth="95.0" styleClass="background">
-                <children>
-                    <Button fx:id="quit" layoutX="24.0" layoutY="361.0" onAction="#Quit" text="Quitter" />
-                </children>
-            </AnchorPane>  
-        </items>
-      </SplitPane>
-   </children>
-</AnchorPane>
+<BorderPane prefHeight="150.0" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ThermometreController">
+   <right>
+        <Button fx:id="quit" onAction="#Quit" text="Quitter" BorderPane.alignment="CENTER" />
+   </right>
+   <left>
+        <ProgressBar fx:id="ProgressBar" rotate="270.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <Label fx:id="indicateurThermometre" text="Label" BorderPane.alignment="CENTER">
+          <font>
+              <Font size="24.0" />
+          </font>
+      </Label>
+   </center>
+</BorderPane>
