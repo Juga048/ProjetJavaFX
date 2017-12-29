@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <?import java.lang.String?>
 <?import javafx.collections.FXCollections?>
 <?import javafx.scene.control.Button?>
@@ -7,43 +11,35 @@
 <?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
-
 <?import javafx.scene.control.ListView?>
-<AnchorPane prefHeight="402.0" prefWidth="361.0" styleClass="background" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CapteurController">
-    <children>
-      <HBox prefHeight="460.0" prefWidth="361.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CapteurController">
+   <right>
+      <VBox BorderPane.alignment="CENTER">
          <children>
-            <AnchorPane prefHeight="418.0" prefWidth="222.0">
-                <children>
-                    <ListView fx:id="listesDesCapteurs" items="${controller.leModele.lesCapteurs}"/>
-                </children>
-                <children>
-                    <ToolBar layoutX="34.0" layoutY="368.0" prefHeight="51.0" prefWidth="253.0" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="368.0">
-                        <items>
-                            <Button fx:id="ajouter" onAction="#creerFenetreValidation" text="Ajouter" />
-                            <Button fx:id="retirer" onAction="#retirerCapteur" text="Retirer" />
-                        </items>
-                    </ToolBar>
-                </children>
-            </AnchorPane>
-          
-                              <AnchorPane prefHeight="419.0" prefWidth="148.0" styleClass="background">
-                <children>
-                    <Button fx:id="quit" layoutX="21.0" layoutY="384.0" onAction="#quit" text="Quitter" />
-                    <ComboBox fx:id="MenuAffichage" layoutX="15.0" layoutY="33.0" prefHeight="32.0" prefWidth="99.0" promptText="Affichage" AnchorPane.bottomAnchor="397.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                        <items>
-                            <FXCollections fx:factory="observableArrayList">
-                                <String fx:value="Digital" />
-                                <String fx:value="Icone" />
-                                <String fx:value="Thermomètre" />
-                            </FXCollections>
-                        </items>
-                    </ComboBox>
-                  <Button fx:id="ok" layoutX="37.0" layoutY="229.0" mnemonicParsing="false" onAction="#creerFenetreObservation" text="Ok" />
-      
-                </children>
-            </AnchorPane>
+              <ComboBox fx:id="MenuAffichage" promptText="Affichage">
+                  <items>
+                      <FXCollections fx:factory="observableArrayList">
+                          <String fx:value="Digital" />
+                          <String fx:value="Icone" />
+                          <String fx:value="Thermomètre" />
+                      </FXCollections>
+                  </items>
+              </ComboBox>
+            <Button fx:id="ok" mnemonicParsing="false" onAction="#creerFenetreObservation" text="Valider" />
+              <Button fx:id="quit" onAction="#quit" text="Quitter" />
          </children>
-      </HBox>
-   </children>
-</AnchorPane>
+      </VBox>
+   </right>
+   <bottom>
+        <ToolBar styleClass="background" BorderPane.alignment="CENTER">
+            <items>
+                <Button fx:id="ajouter" onAction="#creerFenetreValidation" text="Ajouter" />
+                <Button fx:id="retirer" onAction="#retirerCapteur" text="Retirer" />
+            </items>
+        </ToolBar>
+   </bottom>
+   <left>
+       <ListView fx:id="listesDesCapteurs" items="${controller.leModele.lesCapteurs}" />
+   </left>
+</BorderPane>
