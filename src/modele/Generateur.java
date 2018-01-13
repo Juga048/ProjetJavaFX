@@ -11,40 +11,4 @@ public abstract class Generateur {
     }*/
     
     public abstract int genererUneTemperature();
-    private int valeurIntiale;
-    private int valeurAjoutee;
-    private int trancheMaximum;
-    private int trancheMinimum;
-
-    public int getValeurIntiale() {
-        return valeurIntiale;
-    }
-
-    public void setValeurIntiale(int valeurIntiale) {
-        this.valeurIntiale = valeurIntiale;
-    }
-
-    public int getValeurAjoutee() {
-        return valeurAjoutee;
-    }
-
-    public void setValeurAjoutee(int valeurAjoutee) {
-        this.valeurAjoutee = valeurAjoutee;
-    }
-    
-    public int getTrancheMinimum() {
-        return trancheMinimum;
-    }
-
-    public void setTrancheMinimum(int trancheMinimum) {
-        this.trancheMinimum = trancheMinimum;
-    }
-    
-    public int getTrancheMaximum() {
-        return trancheMaximum;
-    }
-
-    public void setTrancheMaximum(int trancheMaximum) {
-        this.trancheMaximum = trancheMaximum;
-    }
 }

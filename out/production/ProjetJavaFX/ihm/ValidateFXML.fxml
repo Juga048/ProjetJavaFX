@@ -21,7 +21,7 @@
    <center>
       <VBox BorderPane.alignment="CENTER">
          <children>
-            <TextField fx:id="VilleSaisie" />
+            <TextField fx:id="VilleSaisie" promptText="Nom du Capteur"/>
             <TextField fx:id="TempsSaisie" promptText="Temps (ms)" />
               <ComboBox fx:id="MenuGenerateur">
                   <items>

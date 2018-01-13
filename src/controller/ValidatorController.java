@@ -5,16 +5,20 @@
  */
 package controller;
 
+import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.Alert.AlertType;
 
-import modele.Capteur;
-import modele.CapteurTemporise;
-import modele.GenerateurAleatoire;
+import javafx.scene.image.Image;
+import javafx.stage.Stage;
+import modele.*;
 
 
 /**
@@ -28,10 +32,13 @@ public class ValidatorController implements MainController{
     public void setValeur(int valeur){}
 
     @FXML
+    Stage stage = new Stage();
+
+    @FXML
     Button Annuler;
     
     @FXML
-    Button Valide;
+    Button Valider;
     
     @FXML
     private TextField VilleSaisie;
@@ -48,7 +55,6 @@ public class ValidatorController implements MainController{
         return capteur;
     }
 
-    @FXML
     public void fermerFenetreValidation(ActionEvent e){
         fermerFenetre();
     }
@@ -56,12 +62,12 @@ public class ValidatorController implements MainController{
     public void fermerFenetre(){
         Annuler.getScene().getWindow().hide();
     }
-    // + Ajouter la vérification en cas d'insertion de caractères pour la température
+
 
 
     // Vérifie info et remplis le capteur
     @FXML
-    public void verificationInfoSaisie(ActionEvent e) {
+    public void verificationInfoSaisie(ActionEvent e) throws IOException {
         Alert alert = new Alert(AlertType.ERROR);
         alert.setHeaderText("Erreur");
 
@@ -85,10 +91,44 @@ public class ValidatorController implements MainController{
             }
             
             else{
-                capteur = new CapteurTemporise(VilleSaisie.getText(),Long.parseLong(TempsSaisie.getText()),new GenerateurAleatoire());
-                fermerFenetre();
+                if ( MenuGenerateur.getSelectionModel().getSelectedItem().equals("Génération évolutive")){
+                    capteur = new CapteurTemporise(VilleSaisie.getText(),Long.parseLong(TempsSaisie.getText()),new GenerateurEvolutif());
+                    // valeur de départ, valeur d'ajout
+
+                    // A faire..
+                    fermerFenetre();
+                }
+                if ( MenuGenerateur.getSelectionModel().getSelectedItem().equals("Génération entre x et y")){
+                    InfoGenerateurAvecTrancheController i = (InfoGenerateurAvecTrancheController) nouvelleFenetre("/ihm/InfoGenerateurAvecTranche.fxml");
+                    if (i.TrancheMini != 0 && i.TrancheMax != 0) {
+                        capteur = new CapteurTemporise(VilleSaisie.getText(), Long.parseLong(TempsSaisie.getText()), new GenerateurAvecTranche(i.TrancheMini, i.TrancheMax));
+                        fermerFenetre();
+                    }
+
+                }
+                else {
+                    capteur = new CapteurTemporise(VilleSaisie.getText(),Long.parseLong(TempsSaisie.getText()),new GenerateurAleatoire());
+                    fermerFenetre();
+                }
+
             }
         }
+    }
+
+    public MainController nouvelleFenetre(String nomDuFichierFXML) throws IOException {
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(nomDuFichierFXML));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+
+        //Set the application title and icon
+        stage.setTitle("Infos Complémentaires");
+        stage.getIcons().add(new Image("/img/thermometer_icon.png"));
+        stage.setScene(scene);
+        stage.showAndWait();
+
+        return loader.getController();
+
     }
 
 

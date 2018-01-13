@@ -11,9 +11,18 @@ public class GenerateurAleatoire extends Generateur{
 
     @Override
     public int genererUneTemperature() {
-        int max = 1000;
         int min = -1000;
-        int temperature = (int) round(0 + (Math.random() * (abs(min)+max - 0))) - abs(min);
+        int max = 1000;
+        int temperature;
+
+        if ( min < 0 && max < 0) {
+            // Genere que si les 2 sont positifs ou 2 négatifs
+            temperature = (int) round(0 + (Math.random() * (abs(min) + max - 0))) - abs(min);
+        }
+        else{
+            // Genere que si un seul est négatif
+            temperature = (int)( Math.random()*( max - min + 1 ) ) + min;
+        }
 
         return temperature;
     }
