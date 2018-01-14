@@ -6,15 +6,11 @@
 package controller;
 
 import java.io.IOException;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
-
-
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -22,15 +18,8 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import modele.Capteur;
 import modele.ModeleListeCapteur;
-import modele.CapteurTemporise;
-import modele.GenerateurAleatoire;
 
 
-
-/**
- *
- * @author jugachon1
- */
 public class CapteurController implements MainController{
 
 

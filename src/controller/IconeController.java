@@ -12,10 +12,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
-/**
- *
- * @author Axel
- */
+
 public class IconeController implements MainController{
 
     public int val;

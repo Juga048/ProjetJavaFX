@@ -1,7 +1,5 @@
 package modele;
 
-import java.util.ArrayList;
-
 public abstract class Generateur {
     
     /*public static ArrayList<Class<? extends Generateur>> listeGenerateur;

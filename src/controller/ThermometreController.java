@@ -10,13 +10,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
-import javafx.scene.control.ProgressIndicator;
 
 
-/**
- *
- * @author Axel
- */
+
 public class ThermometreController implements MainController{
     
     public int val;
@@ -26,10 +22,7 @@ public class ThermometreController implements MainController{
     
     @FXML
     ProgressBar ProgressBar;
-    
-    @FXML
-    ProgressIndicator ProgressIndi;
-    
+
     @FXML
     Button quit;
 

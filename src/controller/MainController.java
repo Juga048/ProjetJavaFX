@@ -5,12 +5,8 @@
  */
 package controller;
 
-/**
- *
- * @author axbruget1
- */
 interface MainController {
-    void setValeur(int valeur);
 
+    void setValeur(int valeur);
     void initialize();
 }
