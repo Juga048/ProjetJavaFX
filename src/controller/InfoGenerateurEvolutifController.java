@@ -5,20 +5,18 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import modele.Generateur;
-import modele.GenerateurAvecTranche;
+import launch.Main;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-
-public class InfoGenerateurAvecTrancheController implements MainController {
-
-    @FXML
-    TextField TemperatureMini;
+public class InfoGenerateurEvolutifController implements MainController{
 
     @FXML
-    TextField TemperatureMax;
+    TextField Temperature;
+
+    @FXML
+    TextField Evolution;
 
     @FXML
     Button Annuler;
@@ -26,27 +24,29 @@ public class InfoGenerateurAvecTrancheController implements MainController {
     @FXML
     Button Valider;
 
-    public int TrancheMini;
-    public int TrancheMax;
+    public int temperatureDeBase;
+    public int evolution;
 
     @Override
     public void setValeur(int valeur) {}
     @Override
     public void initialize() {}
 
+
     public void verifChamps(ActionEvent actionEvent) {
         Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setHeaderText("Erreur");
 
-        if ( TemperatureMax.getText().isEmpty() || TemperatureMini.getText().isEmpty()) {
+        if ( Temperature.getText().isEmpty() || Evolution.getText().isEmpty()) {
             alert.setContentText("Erreur, remplissez les champs !");
             alert.showAndWait();
         }
+
         else {
             // Début Expression régulière avec nombres négatifs
             Pattern p = Pattern.compile("-?[0-9]+");
-            Matcher min = p.matcher(TemperatureMini.getText());
-            Matcher max = p.matcher(TemperatureMax.getText());
+            Matcher min = p.matcher(Temperature.getText());
+            Matcher max = p.matcher(Evolution.getText());
             boolean a = min.matches();
             boolean b = max.matches();
 
@@ -57,24 +57,15 @@ public class InfoGenerateurAvecTrancheController implements MainController {
 
             else{
 
-                if (Integer.parseInt(TemperatureMini.getText()) >= Integer.parseInt(TemperatureMax.getText())){
-                    alert.setContentText("Erreur, température Mini doit être strictement inférieure à température Max !");
-                    alert.showAndWait();
-                }
+                temperatureDeBase = Integer.parseInt(Temperature.getText());
+                evolution = Integer.parseInt(Evolution.getText());
 
-                else{
-                    TrancheMini = Integer.parseInt(TemperatureMini.getText());
-                    TrancheMax = Integer.parseInt(TemperatureMax.getText());
-
-                    fermerFenetre();
-                }
-
-
+                fermerFenetre();
             }
         }
+
+
     }
-
-
 
     public void fermerFenetreInfo(ActionEvent actionEvent) {
         fermerFenetre();

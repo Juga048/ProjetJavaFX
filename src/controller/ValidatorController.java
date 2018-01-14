@@ -91,26 +91,28 @@ public class ValidatorController implements MainController{
             }
             
             else{
-                if ( MenuGenerateur.getSelectionModel().getSelectedItem().equals("Génération évolutive")){
-                    capteur = new CapteurTemporise(VilleSaisie.getText(),Long.parseLong(TempsSaisie.getText()),new GenerateurEvolutif());
-                    // valeur de départ, valeur d'ajout
 
-                    // A faire..
-                    fermerFenetre();
-                }
-                if ( MenuGenerateur.getSelectionModel().getSelectedItem().equals("Génération entre x et y")){
-                    InfoGenerateurAvecTrancheController i = (InfoGenerateurAvecTrancheController) nouvelleFenetre("/ihm/InfoGenerateurAvecTranche.fxml");
-                    if (i.TrancheMini != 0 && i.TrancheMax != 0) {
-                        capteur = new CapteurTemporise(VilleSaisie.getText(), Long.parseLong(TempsSaisie.getText()), new GenerateurAvecTranche(i.TrancheMini, i.TrancheMax));
+                switch(MenuGenerateur.getSelectionModel().getSelectedItem().toString()){
+                    case "Génération évolutive":
+                        InfoGenerateurEvolutifController j = (InfoGenerateurEvolutifController) nouvelleFenetre("/ihm/InfoGenerateurEvolutif.fxml");
+                        if (j.temperatureDeBase != 0 && j.evolution != 0){
+                            capteur = new CapteurTemporise(VilleSaisie.getText(),Long.parseLong(TempsSaisie.getText()), new GenerateurEvolutif(j.temperatureDeBase,j.evolution));
+                            fermerFenetre();
+                        }
+                        break;
+
+                    case "Génération entre x et y":
+                        InfoGenerateurAvecTrancheController i = (InfoGenerateurAvecTrancheController) nouvelleFenetre("/ihm/InfoGenerateurAvecTranche.fxml");
+                        if (i.TrancheMini != 0 && i.TrancheMax != 0) {
+                            capteur = new CapteurTemporise(VilleSaisie.getText(), Long.parseLong(TempsSaisie.getText()), new GenerateurAvecTranche(i.TrancheMini, i.TrancheMax));
+                            fermerFenetre();
+                        }
+                        break;
+                    case "Génération Aléatoire":
+                        capteur = new CapteurTemporise(VilleSaisie.getText(),Long.parseLong(TempsSaisie.getText()),new GenerateurAleatoire());
                         fermerFenetre();
-                    }
-
+                        break;
                 }
-                else {
-                    capteur = new CapteurTemporise(VilleSaisie.getText(),Long.parseLong(TempsSaisie.getText()),new GenerateurAleatoire());
-                    fermerFenetre();
-                }
-
             }
         }
     }
