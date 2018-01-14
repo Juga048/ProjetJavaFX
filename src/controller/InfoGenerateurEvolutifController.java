@@ -11,16 +11,16 @@ import java.util.regex.Pattern;
 public class InfoGenerateurEvolutifController implements MainController{
 
     @FXML
-    TextField Temperature;
+    TextField temperature;
 
     @FXML
-    TextField Evolution;
+    TextField evolutiontemperature;
 
     @FXML
-    Button Annuler;
+    Button annuler;
 
     @FXML
-    Button Valider;
+    Button valider;
 
     public int temperatureDeBase;
     public int evolution;
@@ -35,7 +35,7 @@ public class InfoGenerateurEvolutifController implements MainController{
         Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setHeaderText("Erreur");
 
-        if ( Temperature.getText().isEmpty() || Evolution.getText().isEmpty()) {
+        if ( temperature.getText().isEmpty() || evolutiontemperature.getText().isEmpty()) {
             alert.setContentText("Erreur, remplissez les champs !");
             alert.showAndWait();
         }
@@ -43,8 +43,8 @@ public class InfoGenerateurEvolutifController implements MainController{
         else {
             // Début Expression régulière avec nombres négatifs
             Pattern p = Pattern.compile("-?[0-9]+");
-            Matcher min = p.matcher(Temperature.getText());
-            Matcher max = p.matcher(Evolution.getText());
+            Matcher min = p.matcher(temperature.getText());
+            Matcher max = p.matcher(evolutiontemperature.getText());
             boolean a = min.matches();
             boolean b = max.matches();
 
@@ -55,8 +55,8 @@ public class InfoGenerateurEvolutifController implements MainController{
 
             else{
 
-                temperatureDeBase = Integer.parseInt(Temperature.getText());
-                evolution = Integer.parseInt(Evolution.getText());
+                temperatureDeBase = Integer.parseInt(temperature.getText());
+                evolution = Integer.parseInt(evolutiontemperature.getText());
 
                 fermerFenetre();
             }
@@ -70,6 +70,6 @@ public class InfoGenerateurEvolutifController implements MainController{
     }
 
     public void fermerFenetre(){
-        Annuler.getScene().getWindow().hide();
+        annuler.getScene().getWindow().hide();
     }
 }

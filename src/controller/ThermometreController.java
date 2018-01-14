@@ -21,7 +21,7 @@ public class ThermometreController implements MainController{
     
     
     @FXML
-    ProgressBar ProgressBar;
+    ProgressBar progressBar;
 
     @FXML
     Button quit;
@@ -34,10 +34,10 @@ public class ThermometreController implements MainController{
     public void initialize() {
         // en supposant que température entre 0 et 50, 50 donne 1 -> barre au max
         if ( val < 0 ){
-            ProgressBar.setProgress(0);
+            progressBar.setProgress(0);
         }
         else{
-            ProgressBar.setProgress((((double) val)/50));
+            progressBar.setProgress((((double) val)/50));
         }
         indicateurThermometre.setText(String.valueOf(Integer.parseInt((String.valueOf(val))))+" °");    
     }

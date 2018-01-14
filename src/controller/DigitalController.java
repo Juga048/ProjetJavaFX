@@ -22,13 +22,13 @@ public class DigitalController implements MainController{
     Button quit;  
     
     @FXML
-    Label AffichageDigital;
+    Label affichageDigital;
     
     
 
     @FXML
     public void initialize() {
-        AffichageDigital.setText(String.valueOf(Integer.parseInt((String.valueOf(val))))+" °");
+        affichageDigital.setText(String.valueOf(Integer.parseInt((String.valueOf(val))))+" °");
     }
 
   

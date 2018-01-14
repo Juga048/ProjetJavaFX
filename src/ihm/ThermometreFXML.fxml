@@ -16,7 +16,7 @@
         <Button fx:id="quit" onAction="#Quit" text="Quitter" BorderPane.alignment="CENTER" />
    </right>
    <left>
-        <ProgressBar fx:id="ProgressBar" rotate="270.0" BorderPane.alignment="CENTER" />
+        <ProgressBar fx:id="progressBar" rotate="270.0" BorderPane.alignment="CENTER" />
    </left>
    <center>
       <Label fx:id="indicateurThermometre" text="Label" BorderPane.alignment="CENTER">

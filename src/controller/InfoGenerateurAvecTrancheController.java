@@ -12,19 +12,19 @@ import java.util.regex.Pattern;
 public class InfoGenerateurAvecTrancheController implements MainController {
 
     @FXML
-    TextField TemperatureMini;
+    TextField temperatureMini;
 
     @FXML
-    TextField TemperatureMax;
+    TextField temperatureMax;
 
     @FXML
-    Button Annuler;
+    Button annuler;
 
     @FXML
-    Button Valider;
+    Button valider;
 
-    public int TrancheMini;
-    public int TrancheMax;
+    public int trancheMini;
+    public int trancheMax;
 
     @Override
     public void setValeur(int valeur) {}
@@ -35,15 +35,15 @@ public class InfoGenerateurAvecTrancheController implements MainController {
         Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setHeaderText("Erreur");
 
-        if ( TemperatureMax.getText().isEmpty() || TemperatureMini.getText().isEmpty()) {
+        if ( temperatureMax.getText().isEmpty() || temperatureMini.getText().isEmpty()) {
             alert.setContentText("Erreur, remplissez les champs !");
             alert.showAndWait();
         }
         else {
             // Début Expression régulière avec nombres négatifs
             Pattern p = Pattern.compile("-?[0-9]+");
-            Matcher min = p.matcher(TemperatureMini.getText());
-            Matcher max = p.matcher(TemperatureMax.getText());
+            Matcher min = p.matcher(temperatureMini.getText());
+            Matcher max = p.matcher(temperatureMax.getText());
             boolean a = min.matches();
             boolean b = max.matches();
 
@@ -54,14 +54,14 @@ public class InfoGenerateurAvecTrancheController implements MainController {
 
             else{
 
-                if (Integer.parseInt(TemperatureMini.getText()) >= Integer.parseInt(TemperatureMax.getText())){
+                if (Integer.parseInt(temperatureMini.getText()) >= Integer.parseInt(temperatureMax.getText())){
                     alert.setContentText("Erreur, température Mini doit être strictement inférieure à température Max !");
                     alert.showAndWait();
                 }
 
                 else{
-                    TrancheMini = Integer.parseInt(TemperatureMini.getText());
-                    TrancheMax = Integer.parseInt(TemperatureMax.getText());
+                    trancheMini = Integer.parseInt(temperatureMini.getText());
+                    trancheMax = Integer.parseInt(temperatureMax.getText());
 
                     fermerFenetre();
                 }
@@ -78,6 +78,6 @@ public class InfoGenerateurAvecTrancheController implements MainController {
     }
 
     public void fermerFenetre(){
-        Annuler.getScene().getWindow().hide();
+        annuler.getScene().getWindow().hide();
     }
 }

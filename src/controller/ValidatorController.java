@@ -98,8 +98,8 @@ public class ValidatorController implements MainController{
 
                     case "Génération entre x et y":
                         InfoGenerateurAvecTrancheController i = (InfoGenerateurAvecTrancheController) nouvelleFenetre("/ihm/InfoGenerateurAvecTranche.fxml");
-                        if (i.TrancheMini != 0 && i.TrancheMax != 0) {
-                            capteur = new CapteurTemporise(VilleSaisie.getText(), Long.parseLong(TempsSaisie.getText()), new GenerateurAvecTranche(i.TrancheMini, i.TrancheMax));
+                        if (i.trancheMini != 0 && i.trancheMax != 0) {
+                            capteur = new CapteurTemporise(VilleSaisie.getText(), Long.parseLong(TempsSaisie.getText()), new GenerateurAvecTranche(i.trancheMini, i.trancheMax));
                             fermerFenetre();
                         }
                         break;

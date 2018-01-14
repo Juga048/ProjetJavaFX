@@ -41,7 +41,7 @@ public class CapteurController implements MainController{
     }
    
     @FXML
-    ComboBox MenuAffichage;
+    ComboBox menuAffichage;
 
 
 
@@ -61,24 +61,23 @@ public class CapteurController implements MainController{
     @FXML
     private void creerFenetreObservation(ActionEvent e) throws IOException {
         // Vérifie 2 condtions : Un capteur ET un affichage doivent être sélectionné
-        if ( MenuAffichage.getValue() == null || listesDesCapteurs.getSelectionModel().getSelectedIndex() == -1) {
+        if ( menuAffichage.getValue() == null || listesDesCapteurs.getSelectionModel().getSelectedIndex() == -1) {
             return;
         }
 
         else {
-            if (MenuAffichage.getValue().equals("Digital")) {
-                DigitalController d = (DigitalController) nouvelleFenetre("/ihm/DigitalFXML.fxml", "Affichage température digitale");
-            }
-            if (MenuAffichage.getValue().equals("Icone")) {
-                IconeController i = (IconeController) nouvelleFenetre("/ihm/IconeFXML.fxml", "Affichage température icône");
-            }
-            if (MenuAffichage.getValue().equals("Thermomètre")) {
-                ThermometreController t = (ThermometreController) nouvelleFenetre("/ihm/ThermometreFXML.fxml", "Affichage température thermomètre");
+            switch (menuAffichage.getValue().toString()) {
+                case "Digital":
+                    DigitalController d = (DigitalController) nouvelleFenetre("/ihm/DigitalFXML.fxml", "Affichage température digitale");
+                    break;
+                case "Icone":
+                    IconeController i = (IconeController) nouvelleFenetre("/ihm/IconeFXML.fxml", "Affichage température icône");
+                    break;
+                case "Thermomètre":
+                    ThermometreController t = (ThermometreController) nouvelleFenetre("/ihm/ThermometreFXML.fxml", "Affichage température thermomètre");
+                    break;
             }
         }
-
-
-
     }
 
     // méthode permettant d'éditer la vue avant le .show

@@ -16,6 +16,6 @@
         <Button fx:id="quit" onAction="#Quit" text="Quitter" BorderPane.alignment="CENTER" />
    </right>
    <center>
-        <ImageView fx:id="ImageIcone" BorderPane.alignment="CENTER" />
+        <ImageView fx:id="imageIcone" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>

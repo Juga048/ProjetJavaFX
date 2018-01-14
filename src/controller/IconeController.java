@@ -21,7 +21,7 @@ public class IconeController implements MainController{
     
   
     @FXML
-    ImageView ImageIcone;
+    ImageView imageIcone;
     
     @FXML
     Button quit;
@@ -42,16 +42,16 @@ public class IconeController implements MainController{
     @FXML
     public void initialize() {
         if ( val <= -20 ) {
-            ImageIcone.setImage(new Image("img/Weather4.png"));
+            imageIcone.setImage(new Image("img/Weather4.png"));
         }
         else if (val > -20 && val <= 0) {
-            ImageIcone.setImage(new Image("img/Weather2.png"));
+            imageIcone.setImage(new Image("img/Weather2.png"));
         }
         else if (val > 0 && val < 20){
-            ImageIcone.setImage(new Image("img/Weather3.png"));
+            imageIcone.setImage(new Image("img/Weather3.png"));
         }
         else if (val >= 20) {
-            ImageIcone.setImage(new Image("img/Weather1.png"));
+            imageIcone.setImage(new Image("img/Weather1.png"));
         }
     }
 
