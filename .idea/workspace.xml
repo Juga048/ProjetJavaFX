@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b13c3d16-2c82-4add-ae6b-6f768e44e293" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/CapteurController.java" afterPath="$PROJECT_DIR$/src/controller/CapteurController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/DigitalController.java" afterPath="$PROJECT_DIR$/src/controller/DigitalController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/IconeController.java" afterPath="$PROJECT_DIR$/src/controller/IconeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/InfoGenerateurAvecTrancheController.java" afterPath="$PROJECT_DIR$/src/controller/InfoGenerateurAvecTrancheController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/InfoGenerateurEvolutifController.java" afterPath="$PROJECT_DIR$/src/controller/InfoGenerateurEvolutifController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/ThermometreController.java" afterPath="$PROJECT_DIR$/src/controller/ThermometreController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/ValidatorController.java" afterPath="$PROJECT_DIR$/src/controller/ValidatorController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ihm/DigitalFXML.fxml" afterPath="$PROJECT_DIR$/src/ihm/DigitalFXML.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ihm/IconeFXML.fxml" afterPath="$PROJECT_DIR$/src/ihm/IconeFXML.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ihm/InfoGenerateurAvecTranche.fxml" afterPath="$PROJECT_DIR$/src/ihm/InfoGenerateurAvecTranche.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ihm/InfoGenerateurEvolutif.fxml" afterPath="$PROJECT_DIR$/src/ihm/InfoGenerateurEvolutif.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ihm/MainFXML.fxml" afterPath="$PROJECT_DIR$/src/ihm/MainFXML.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ihm/ThermometreFXML.fxml" afterPath="$PROJECT_DIR$/src/ihm/ThermometreFXML.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/launch/Main.java" afterPath="$PROJECT_DIR$/src/launch/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modele/Capteur.java" afterPath="$PROJECT_DIR$/src/modele/Capteur.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modele/CapteurSuper.java" afterPath="$PROJECT_DIR$/src/modele/CapteurSuper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/modele/ModeleListeCapteur.java" afterPath="$PROJECT_DIR$/src/modele/ModeleListeCapteur.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,21 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Generateur.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modele/Generateur.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Capteur.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modele/Capteur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            <state relative-caret-position="311">
+              <caret line="26" column="35" lean-forward="true" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,8 +32,8 @@
       <file leaf-file-name="CapteurSuper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modele/CapteurSuper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-46">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="226">
+              <caret line="24" column="21" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,8 +44,32 @@
       <file leaf-file-name="CapteurTemporise.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/modele/CapteurTemporise.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+            <state relative-caret-position="374">
+              <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CapteurController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/CapteurController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-510">
+              <caret line="79" column="9" lean-forward="false" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DigitalController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/DigitalController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,18 +82,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InfoGenerateurEvolutifController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/InfoGenerateurEvolutifController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,8 +114,8 @@
       <file leaf-file-name="ModeleListeCapteur.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modele/ModeleListeCapteur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            <state relative-caret-position="442">
+              <caret line="30" column="55" lean-forward="false" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -133,9 +126,11 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/launch/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-              <folding />
+            <state relative-caret-position="362">
+              <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -176,7 +171,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/css/style.css" />
-        <option value="$PROJECT_DIR$/src/launch/Main.java" />
         <option value="$PROJECT_DIR$/src/controller/iconeController.java" />
         <option value="$PROJECT_DIR$/src/controller/thermometreController.java" />
         <option value="$PROJECT_DIR$/src/controller/digitalController.java" />
@@ -185,9 +179,6 @@
         <option value="$PROJECT_DIR$/src/modele/GenerateurTemperature.java" />
         <option value="$PROJECT_DIR$/src/ihm/ValidatorFXML.fxml" />
         <option value="$PROJECT_DIR$/src/modele/ModeleTexte.java" />
-        <option value="$PROJECT_DIR$/src/modele/Capteur.java" />
-        <option value="$PROJECT_DIR$/src/modele/CapteurSuper.java" />
-        <option value="$PROJECT_DIR$/src/modele/ModeleListeCapteur.java" />
         <option value="$PROJECT_DIR$/src/ihm/ValidateFXML.fxml" />
         <option value="$PROJECT_DIR$/src/modele/CapteurTemporise.java" />
         <option value="$PROJECT_DIR$/src/modele/GenerateurAleatoire.java" />
@@ -209,6 +200,10 @@
         <option value="$PROJECT_DIR$/src/controller/InfoGenerateurEvolutifController.java" />
         <option value="$PROJECT_DIR$/src/controller/InfoGenerateurAvecTrancheController.java" />
         <option value="$PROJECT_DIR$/src/controller/ValidatorController.java" />
+        <option value="$PROJECT_DIR$/src/launch/Main.java" />
+        <option value="$PROJECT_DIR$/src/modele/Capteur.java" />
+        <option value="$PROJECT_DIR$/src/modele/ModeleListeCapteur.java" />
+        <option value="$PROJECT_DIR$/src/modele/CapteurSuper.java" />
       </list>
     </option>
   </component>
@@ -445,16 +440,15 @@
       <workItem from="1513258032416" duration="1129000" />
       <workItem from="1513259179439" duration="1092000" />
       <workItem from="1515852018815" duration="13551000" />
-      <workItem from="1515919234788" duration="6668000" />
+      <workItem from="1515919234788" duration="9384000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80190000" />
+    <option name="totallyTimeSpent" value="82906000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -465,7 +459,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25792813" sideWeight="0.58229166" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25792813" sideWeight="0.41770834" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25792813" sideWeight="0.41770834" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -594,16 +588,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/DigitalController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ihm/DigitalFXML.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -613,16 +597,6 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/CapteurController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="79" column="9" lean-forward="false" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ihm/IconeFXML.fxml">
@@ -763,28 +737,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modele/ModeleListeCapteur.java">
+    <entry file="file://$PROJECT_DIR$/src/launch/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="362">
+          <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/launch/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/controller/DigitalController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-          <folding />
+        <state relative-caret-position="408">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/CapteurController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510">
+          <caret line="79" column="9" lean-forward="false" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modele/ModeleListeCapteur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="30" column="55" lean-forward="false" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modele/Capteur.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="311">
+          <caret line="26" column="35" lean-forward="true" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -793,8 +789,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modele/CapteurSuper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-46">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="226">
+          <caret line="24" column="21" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -803,8 +799,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modele/CapteurTemporise.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        <state relative-caret-position="374">
+          <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

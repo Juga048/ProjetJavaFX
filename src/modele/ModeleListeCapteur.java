@@ -28,7 +28,7 @@ public class ModeleListeCapteur {
         lesCapteurs.add(new CapteurTemporise("Nice",2000,new GenerateurAleatoire()));
         lesCapteurs.add(new CapteurTemporise("Strasbourg",2000,new GenerateurAleatoire()));
 
-        CapteurSuper c = new CapteurSuper("AAA");
+        CapteurSuper c = new CapteurSuper("SuperCapteur");
         c.ajouterSousCapteurs(lesCapteurs.get(1));
         c.ajouterSousCapteurs(lesCapteurs.get(2));
         lesCapteurs.add(c);

@@ -22,7 +22,7 @@ public class CapteurSuper implements Capteur{
 
 
     public CapteurSuper(String nom) {
-        name.set("super - "+nom);
+        name.set("(S) - "+nom);
         this.setValue(calculerMoyennePonderee());
     }
 
