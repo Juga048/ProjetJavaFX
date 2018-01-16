@@ -18,8 +18,7 @@ import javafx.application.Platform;
 
 
 /**
- *
- * @author jugachon1
+ * Classe CapteurTemporise
  */
 public class CapteurTemporise implements Capteur, Runnable{
 
@@ -41,7 +40,12 @@ public class CapteurTemporise implements Capteur, Runnable{
     public String getName(){return name.get();}
     public StringProperty nameProperty(){return name;}
 
-
+    /**
+     * Constructeur qui va attribuer un nom, une valeur de temps et un generateur
+     * @param nom Correspond au nom du CapteurTemporise
+     * @param temps Correspond à l'intervalle de temps à laquelle la valeur du Capteur va se mettre à jour
+     * @param generateur Correspond à la méthode de génération de valeur choisie
+     */
     public CapteurTemporise(String nom, long temps, Generateur generateur){
         this.setName(nom);
         this.generateur = generateur;
@@ -52,10 +56,17 @@ public class CapteurTemporise implements Capteur, Runnable{
         new Thread(this).start();
     }
 
+    /**
+     * Méthode qui aurait le but de stopper les threads lorsque le programme est fermé.
+     */
     public void ArreterThread(){
         this.isRunning = false;
     }
 
+    /**
+     * Méthode qui permet de mettre à jour la valeur des Capteurs à l'intervalle de temps choisie.
+     * La valeur est générée par le generateur du Capteur.
+     */
     @Override
     public void run(){
 

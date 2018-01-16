@@ -3,12 +3,19 @@ package modele;
 import static java.lang.StrictMath.abs;
 import static java.lang.StrictMath.round;
 
+/**
+ * Classe GenerateurAleatoire qui va permettre de générer une température aléatoirement
+ */
 public class GenerateurAleatoire extends Generateur{
 
     /*static{
         Generateur.enregistrer(GenerateurAleatoire.class);
     }*/
 
+    /**
+     * Méthode qui va générer la température aléatoirement entre -1000 et 1000
+     * @return la valeur générée du Capteur
+     */
     @Override
     public int genererUneTemperature() {
         int min = -1000;

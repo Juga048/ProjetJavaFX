@@ -20,6 +20,9 @@ public class ModeleListeCapteur {
         public ObservableList<Capteur> getLesCapteurs() {return lesCapteurs.get();}
         public ListProperty<Capteur> lesCapteursProperty() {return lesCapteurs;}
 
+    /**
+     * Méthode qui va crée des capteurs et les ajouter à la liste au lancement du programme
+     */
     public void genererCapteurs() {
         lesCapteurs.add(new CapteurTemporise("Clermont-Ferrand",2000,new GenerateurAleatoire()));
         lesCapteurs.add(new CapteurTemporise("Paris",2000,new GenerateurAleatoire()));
@@ -33,9 +36,13 @@ public class ModeleListeCapteur {
         c.ajouterSousCapteurs(lesCapteurs.get(2));
         lesCapteurs.add(c);
     }
-    
-    public void ajouterCapteur(Capteur C){
-        lesCapteurs.add(C);
+
+    /**
+     * Méthode qui permet d'ajouter un capteur à la liste des Capteurs
+     * @param capteur Le capteur qui va être ajouté
+     */
+    public void ajouterCapteur(Capteur capteur){
+        lesCapteurs.add(capteur);
     }
 
 }
